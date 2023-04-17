@@ -1,0 +1,2518 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Opus: Rocket of Whispers\n"
+"Report-Msgid-Bugs-To: ivanjimenez0408@gmail.com\n"
+"POT-Creation-Date: 17/04/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. CHT
+msgctxt "LocKey"
+msgid "EN"
+msgstr "ES"
+
+#. 作者
+msgctxt "Name_Brian"
+msgid "Author"
+msgstr ""
+
+#. 約翰
+msgctxt "Name_Man"
+msgid "John"
+msgstr ""
+
+#. 少年約翰
+msgctxt "Name_ManYoung"
+msgid "Young John"
+msgstr ""
+
+#. 約翰
+msgctxt "Name_ManGrey"
+msgid "John"
+msgstr ""
+
+#. 芳
+msgctxt "Name_Girl"
+msgid "Fei"
+msgstr ""
+
+#. 孩童芳
+msgctxt "Name_GirlYoung"
+msgid "Young Fei"
+msgstr ""
+
+#. ？？？
+msgctxt "Name_GirlObscure"
+msgid "???"
+msgstr ""
+
+#. 女巫
+msgctxt "Name_GirlWitch"
+msgid "Witch"
+msgstr ""
+
+#. 芳
+msgctxt "Name_GirlGrey"
+msgid "Fei"
+msgstr ""
+
+#. 靈魂
+msgctxt "Name_Ghost"
+msgid "Ghost"
+msgstr ""
+
+msgctxt "Name_Inspect"
+msgid "<!empty>"
+msgstr ""
+
+msgctxt "Name_Phone"
+msgid "<!empty>"
+msgstr ""
+
+#. 男子
+msgctxt "Name_NPCMan"
+msgid "Crowd"
+msgstr ""
+
+#. 婦女
+msgctxt "Name_NPCWoman"
+msgid "Crowd"
+msgstr ""
+
+#. 長者
+msgctxt "Name_NPCOldMan"
+msgid "Crowd"
+msgstr ""
+
+#. 約翰父親
+msgctxt "Name_Father"
+msgid "John's Father"
+msgstr ""
+
+#. 約翰母親
+msgctxt "Name_Mother"
+msgid "John's Mother"
+msgstr ""
+
+#. 大伯
+msgctxt "Name_Uncle"
+msgid "Uncle Paul"
+msgstr ""
+
+#. 長老
+msgctxt "Name_Elder"
+msgid "Elder"
+msgstr ""
+
+#. 侍從
+msgctxt "Name_Servant"
+msgid "Servant"
+msgstr ""
+
+#. 曼森
+msgctxt "S_Family"
+msgid "Mason"
+msgstr ""
+
+#. 馬修
+msgctxt "S_Father"
+msgid "Matthew"
+msgstr ""
+
+#. 馬修 曼森
+msgctxt "S_FatherFull"
+msgid "Matthew Mason"
+msgstr ""
+
+#. 莎拉
+msgctxt "S_Mother"
+msgid "Sarah"
+msgstr ""
+
+#. 莎拉 曼森
+msgctxt "S_MotherFull"
+msgid "Sarah Mason"
+msgstr ""
+
+#. 保羅
+msgctxt "S_Uncle"
+msgid "Paul"
+msgstr ""
+
+#. 保羅 曼森
+msgctxt "S_UncleFull"
+msgid "Paul Mason"
+msgstr ""
+
+#. 阿瑪迪斯
+msgctxt "S_Elder"
+msgid "Amadeus"
+msgstr ""
+
+#. 阿瑪迪斯 楊
+msgctxt "S_ElderFull"
+msgid "Amadeus Young"
+msgstr ""
+
+#. 德雷斯
+msgctxt "S_Sheriff"
+msgid "Dallas"
+msgstr ""
+
+#. 雪菈
+msgctxt "S_SheriffWife"
+msgid "Rose"
+msgstr ""
+
+#. 彼得
+msgctxt "S_OldPriest"
+msgid "Peter"
+msgstr ""
+
+#. 顏
+msgctxt "S_Neighbor"
+msgid "Yen"
+msgstr ""
+
+#. 提姆
+msgctxt "S_Friend"
+msgid "Tim"
+msgstr ""
+
+#. 艾瑪
+msgctxt "S_LittleGirl"
+msgid "Emma"
+msgstr ""
+
+#. 瑞柏
+msgctxt "S_Photographer"
+msgid "Weyburn"
+msgstr ""
+
+#. 羅傑
+msgctxt "S_Carpenter"
+msgid "Roger"
+msgstr ""
+
+#. 傑森
+msgctxt "S_CarpenterSon"
+msgid "Jason"
+msgstr ""
+
+#. 南希
+msgctxt "S_Doctress"
+msgid "Nancy"
+msgstr ""
+
+#. 南希 史密斯
+msgctxt "S_DoctressFull"
+msgid "Nancy Smith"
+msgstr ""
+
+#. 喬治
+msgctxt "S_Doctor"
+msgid "George"
+msgstr ""
+
+#. 喬治 史密斯
+msgctxt "S_DoctorFull"
+msgid "George Smith"
+msgstr ""
+
+#. 奧伯斯火箭工廠
+msgctxt "LocMap_Home"
+msgid "Opus Rocket Factory"
+msgstr ""
+
+#. 馬可夫小鎮中心
+msgctxt "LocMap_Town"
+msgid "Malkuth Town Center"
+msgstr ""
+
+#. 馬可夫新礦場
+msgctxt "LocMap_Mine2"
+msgid "New Malkuth Mine"
+msgstr ""
+
+#. 荷米市外城區
+msgctxt "LocMap_OuterCity"
+msgid "Hetmis Outer City"
+msgstr ""
+
+#. 透過火箭，我們將靈魂送往天堂  節錄自 宇宙葬的起源與歷史 第46代女巫 林芳
+msgctxt "Slide_Intro"
+msgid ""
+"By this rocket, we return them to the cosmos.\n"
+"- A History of Space Burials,\n"
+"Fei Lin, Witch of the 46th Generation"
+msgstr ""
+
+#. 銀河曆15320年  無預警的瘟疫如洪水般，破壞了過往所知的一切，一年間，倖存的人口不到原有的萬分之一。
+msgctxt "Slide_History1"
+msgid ""
+"Galactic Calendar 15320\n"
+"The Plague arrived without warning and destroyed everything we knew. Within a year, the population was reduced to fractions of a percent."
+msgstr ""
+
+#. 面對無可挽回的劫難，負責國家生死大祭「宇宙葬」的女巫們，決心進入短期的冬眠。
+msgctxt "Slide_History2"
+msgid "In the face of such catastrophe, the witches, who were responsible for the nation's tradition of space burials, decided to put themselves in cryogenic sleep."
+msgstr ""
+
+#. 她們祈禱，如果能甦醒於瘟疫消退的年代，她們將有能力重建信仰與文明。
+msgctxt "Slide_History3"
+msgid "They pray that once the Plague has settled, they can return to rebuild their civilization and faith."
+msgstr ""
+
+#. 如此的她們，將有能力再次舉辦「宇宙葬」，只求瘟疫苦難的人們，得以於銀河安息。  節錄自："地球教百年紀事"
+msgctxt "Slide_History4"
+msgid ""
+"They pray that when space burials can be held again, those who fell victim to the Plague might finally rest among the stars.\n"
+"Earthology: A Century of Trials"
+msgstr ""
+
+#. 電力供給終止>>強制解除冬眠程序
+msgctxt "Slide_Wakeup1"
+msgid ""
+"POWER SUPPLY INSUFFICIENT >>\n"
+"HIBERNATION TERMINATION PROCESS\n"
+"INITIATED"
+msgstr ""
+
+#. 解除
+msgctxt "Slide_Wakeup2"
+msgid "TERMINATED"
+msgstr ""
+
+#. 立即登入並綁定帳號，以避免您的購買與資料遺失！ 請選擇登入方式：
+msgctxt "UI_Account_TitleSelectAccount"
+msgid "Sign in to keep your purchases and data backed up! You can sign in with:"
+msgstr ""
+
+#. 您目前是訪客身份，提醒您：一旦移除了遊戲，您的紀錄檔和購買物品都會消失！強烈建議您購買前先完成登入。  如果您決定不登入，請務必記下您的訪客ID，可供您在日後尋求客服支援時使用。
+msgctxt "UI_Account_TitleWarning"
+msgid ""
+"NOTICE: If you uninstall the game, your saves and purchases will be lost! We highly recommend signing in before purchasing.\n"
+"If you prefer not to sign in, please keep this ID in case you have any issues related to your purchases."
+msgstr ""
+
+#. 您可以將目前的紀錄檔上傳到雲端進行備份，或是下載雲端的舊紀錄檔以繼續先前的遊戲進度。
+msgctxt "UI_Account_TitleCloudSave"
+msgid "Backup your current progress to the cloud, or download your old save to continue from it."
+msgstr ""
+
+#. 晚點再說
+msgctxt "UI_Account_BtnLater"
+msgid "MAYBE LATER"
+msgstr ""
+
+#. 繼續
+msgctxt "UI_Account_BtnContinue"
+msgid "CONTINUE"
+msgstr ""
+
+#. 取消
+msgctxt "UI_Account_BtnReturn"
+msgid "CANCEL"
+msgstr ""
+
+#. 上傳您的紀錄檔
+msgctxt "UI_Account_BtnUpload"
+msgid "UPLOAD THE SAVE I HAVE NOW"
+msgstr ""
+
+#. 從雲端下載舊紀錄檔
+msgctxt "UI_Account_BtnDownload"
+msgid "DOWNLOAD MY OLD SAVE FROM THE CLOUD"
+msgstr ""
+
+#. 訪客ID：
+msgctxt "UI_Account_InfoTitleID"
+msgid "GUEST ACCOUNT ID:"
+msgstr ""
+
+#. 既有的雲端資料
+msgctxt "UI_Account_InfoTitleSave"
+msgid "EXISTING CLOUD SAVE"
+msgstr ""
+
+#. 沒有雲端資料
+msgctxt "UI_Account_InfoTitleSaveNoExist"
+msgid "NO EXISTING CLOUD SAVE"
+msgstr ""
+
+#. 前次上傳的時間：
+msgctxt "UI_Account_DataTitleSaveTime"
+msgid "LAST UPLOADED: "
+msgstr ""
+
+#. 願你們回到銀河
+msgctxt "UI_Antique_Title"
+msgid "MAY YOU REST AMONG THE STARS"
+msgstr ""
+
+#. 一點頭緒都沒有...
+msgctxt "UI_Ask_AnswerNoClue"
+msgid "Hm, where do I start..."
+msgstr ""
+
+#. 算了
+msgctxt "UI_Ask_BtnOther"
+msgid "Nevermind"
+msgstr ""
+
+#. 我要記住這些事
+msgctxt "UI_Ask_BtnReminder"
+msgid "Keep this in mind"
+msgstr ""
+
+#. 難得有點時間，趁現在看看有什麼別的事情吧。
+msgctxt "UI_Ask_RocketClear"
+msgid "Got some spare time. Anything else to do?"
+msgstr ""
+
+#. 宇宙葬這種事，真的有可能嗎？
+msgctxt "UI_Ask_RocketTitle"
+msgid "Can the two of us launch a space burial?"
+msgstr ""
+
+#. 目前好像沒有什麼事情
+msgctxt "UI_Ask_ToggleMainClear"
+msgid "Not much I can do at the moment."
+msgstr ""
+
+#. 我還有什麼該做的？
+msgctxt "UI_Ask_ToggleMainTitle"
+msgid "What else should I do?"
+msgstr ""
+
+#. 想不到要做什麼，到處晃晃吧
+msgctxt "UI_Ask_ToggleSubClear"
+msgid "Not much to do. I should go for a walk."
+msgstr ""
+
+#. 希望留下點什麼
+msgctxt "UI_Ask_ToggleSubTitle"
+msgid "What more can I do?"
+msgstr ""
+
+#. {0}的材料都找完了，該不該回火箭工廠?
+msgctxt "UI_Ask_TopicComplete"
+msgid "Got the materials for {0}. I should head back."
+msgstr ""
+
+#. 製造中
+msgctxt "UI_Build_BtnBuildBuilding"
+msgid "BUILDING"
+msgstr ""
+
+#. 沒辦法，一次只能專心製作一個火箭零件，我要專心...
+msgctxt "UI_Build_InfoBusy"
+msgid "Hold on, I'm still busy."
+msgstr ""
+
+#. 感覺還缺了什麼東西...?
+msgctxt "UI_Build_InfoLockedDescription"
+msgid "Feels like we're missing something?"
+msgstr ""
+
+#. ？？？？
+msgctxt "UI_Build_InfoLockedTitle"
+msgid "????"
+msgstr ""
+
+#. 立刻完成
+msgctxt "UI_Build_TimeNow"
+msgid "Instant"
+msgstr ""
+
+#. 要一陣子
+msgctxt "UI_Build_TimeOneDay"
+msgid "A While"
+msgstr ""
+
+#. 要一陣子
+msgctxt "UI_Build_TimeTwoDays"
+msgid "Few Days"
+msgstr ""
+
+#. 製造中的{0}
+msgctxt "UI_Build_Waiting"
+msgid "A {0} in progress"
+msgstr ""
+
+#. 確認
+msgctxt "UI_CodeInput_Confirm"
+msgid "CONFIRM"
+msgstr ""
+
+#. 請輸入兌換碼
+msgctxt "UI_CodeInput_Placeholder"
+msgid "ENTER CODE HERE"
+msgstr ""
+
+#. 略過
+msgctxt "UI_CodeInput_Skip"
+msgid "SKIP"
+msgstr ""
+
+#. 在此輸入朋友給你的邀請碼，就能換取珍貴物品！
+msgctxt "UI_CodeInput_TitleInvite"
+msgid ""
+"If you have an invite code from your friend,\n"
+"enter it to get extra items as a reward!"
+msgstr ""
+
+#. 在此輸入兌換碼以取得免費內容！
+msgctxt "UI_CodeInput_TitleRedeem"
+msgid "Enter your redeem code to get free content!"
+msgstr ""
+
+#. 連線中
+msgctxt "UI_Connect_Connecting"
+msgid "CONNECTING"
+msgstr ""
+
+#. 如果能找到材料，或許能一點一點的修復瘟疫前世界的記憶吧？
+msgctxt "UI_Dialogue_AntiqueLocked"
+msgid "If I had the materials, I might be able to restore some of what we lost."
+msgstr ""
+
+#. 暖爐只能燒一晚啊...天黑前早點回工廠吧。
+msgctxt "UI_Dialogue_CampExit"
+msgid "The heater can only last a night. I should head back before dark."
+msgstr ""
+
+#. 得回工廠補充暖爐燃料了，再待下去會凍死。
+msgctxt "UI_Dialogue_CampFail"
+msgid "I need to go back and refuel the heater or I'll freeze."
+msgstr ""
+
+#. 天色漸暗了，不休息的話明天也走不遠，得趕緊搭個帳蓬過夜
+msgctxt "UI_Dialogue_CampRest"
+msgid "It's getting late. I should set up camp and get some rest."
+msgstr ""
+
+#. 天色有點晚了...腦子開始聽到奇怪的聲音...
+msgctxt "UI_Dialogue_NightWarning"
+msgid "It's getting dark. The voices are gathering again..."
+msgstr ""
+
+#. 不行...太晚了什麼都看不到，等早上再來處理比較安全。
+msgctxt "UI_Dialogue_NotTimePickup"
+msgid "It's too dark to see anything. I'm better off coming back in the morning."
+msgstr ""
+
+#. 確認
+msgctxt "UI_General_Confirm"
+msgid "CONFIRM"
+msgstr ""
+
+#. 取消
+msgctxt "UI_General_Dismiss"
+msgid "CANCEL"
+msgstr ""
+
+#. 為達最佳遊玩體驗，強烈建議使用耳機
+msgctxt "UI_Headphones_Title"
+msgid "HEADPHONES RECOMMENDED"
+msgstr ""
+
+#. 沒有頭緒，不知道芳有沒有什麼線索？
+msgctxt "UI_Hint_Phase1_Entry"
+msgid "No idea where to start. Maybe Fei has some clues?"
+msgstr ""
+
+#. 糟糕，還是完全沒頭緒...
+msgctxt "UI_Hint_Phase2_Entry"
+msgid "Really out of ideas..."
+msgstr ""
+
+#. 已完成的{0}
+msgctxt "UI_Home_BuildableComplete"
+msgid "A completed {0}"
+msgstr ""
+
+#. 這還需要一點時間。
+msgctxt "UI_Home_Building"
+msgid "This needs more time."
+msgstr ""
+
+#. 好像可以做出些什麼東西？
+msgctxt "UI_Home_CanBuild"
+msgid "Looks like something can be built."
+msgstr ""
+
+#. 如果有足夠的材料就好了...
+msgctxt "UI_Home_CannotBuild"
+msgid "If only there were enough materials..."
+msgstr ""
+
+#. 是誰...是什麼一直佔據我腦海...？
+msgctxt "UI_HUDAsk_Reminder"
+msgid "There's a voice in my head..."
+msgstr ""
+
+#. 是誰...是什麼一直佔據我腦海...？
+msgctxt "UI_HUDAsk_BtnNotice"
+msgid "There's a voice in my head..."
+msgstr ""
+
+#. 有別的事嗎？
+msgctxt "UI_HUDAsk_BtnOther"
+msgid "Anything else?"
+msgstr ""
+
+#. 繼續吧
+msgctxt "UI_HUDAsk_BtnReminder"
+msgid "Let's carry on."
+msgstr ""
+
+#. 於{0}秒後進入結局
+msgctxt "UI_HUDEnding_CutsceneReminder"
+msgid "PROCEED TO ENDING IN {0} SECONDS"
+msgstr ""
+
+#. m
+msgctxt "UI_Inventory_RocketUnit"
+msgid "m"
+msgstr ""
+
+#. 尚未解開
+msgctxt "UI_Inventory_LockedCutscene"
+msgid "LOCKED"
+msgstr ""
+
+#. 尚未解開
+msgctxt "UI_Inventory_LockedMemory"
+msgid "LOCKED"
+msgstr ""
+
+#. 相互支撐
+msgctxt "UI_Inventory_MR_Carry"
+msgid "WEIGHT ON OUR SHOULDERS"
+msgstr ""
+
+#. 父親的肩膀
+msgctxt "UI_Inventory_MR_Childhood1"
+msgid "FATHER'S SHOULDERS"
+msgstr ""
+
+#. 回憶的宇宙葬祭典
+msgctxt "UI_Inventory_MR_Childhood2"
+msgid "ONCE UPON A SPACE BURIAL"
+msgstr ""
+
+#. 衝突
+msgctxt "UI_Inventory_MR_Confliction"
+msgid "CONFLICT"
+msgstr ""
+
+#. 連續的挫敗1
+msgctxt "UI_Inventory_MR_ContinuousFailure1"
+msgid "FAILURE"
+msgstr ""
+
+#. 連續的挫敗2
+msgctxt "UI_Inventory_MR_ContinuousFailure2"
+msgid "MORE FAILURE"
+msgstr ""
+
+#. 連續的挫敗3
+msgctxt "UI_Inventory_MR_ContinuousFailure3"
+msgid "AND MORE FAILURE"
+msgstr ""
+
+#. 眾人的寄託
+msgctxt "UI_Inventory_MR_ElderLeft"
+msgid "ENTRUSTMENT"
+msgstr ""
+
+#. 邂逅
+msgctxt "UI_Inventory_MR_Encounter"
+msgid "ENCOUNTER"
+msgstr ""
+
+#. 小約翰賴床
+msgctxt "UI_Inventory_MR_Family1"
+msgid "GET UP, JOHN"
+msgstr ""
+
+#. 害怕被丟下的約翰
+msgctxt "UI_Inventory_MR_Family2"
+msgid "DON'T LEAVE ME BEHIND"
+msgstr ""
+
+#. 哭鬧的約翰
+msgctxt "UI_Inventory_MR_Family3"
+msgid "TEARS"
+msgstr ""
+
+#. 終點
+msgctxt "UI_Inventory_MR_FinalHome1"
+msgid "DESTINATION"
+msgstr ""
+
+#. 終點
+msgctxt "UI_Inventory_MR_FinalHome2"
+msgid "DESTINATION 2"
+msgstr ""
+
+#. 回憶的宇宙葬祭典2
+msgctxt "UI_Inventory_MR_Funeral2"
+msgid "ONCE UPON A SPACE BURIAL 2"
+msgstr ""
+
+#. 回憶的宇宙葬祭典3
+msgctxt "UI_Inventory_MR_Funeral3"
+msgid "ONCE UPON A SPACE BURIAL 3"
+msgstr ""
+
+#. 回憶的宇宙葬祭典4
+msgctxt "UI_Inventory_MR_Funeral4"
+msgid "ONCE UPON A SPACE BURIAL 4"
+msgstr ""
+
+#. 安魂曲
+msgctxt "UI_Inventory_MR_Harm"
+msgid "RECOVERY"
+msgstr ""
+
+#. 芳留下的信
+msgctxt "UI_Inventory_MR_Letter"
+msgid "LETTER"
+msgstr ""
+
+#. 最後一面
+msgctxt "UI_Inventory_MR_ParentLeft"
+msgid "DEPARTURE"
+msgstr ""
+
+#. 倖存者
+msgctxt "UI_Inventory_MR_PlagueReport"
+msgid "SURVIVORS"
+msgstr ""
+
+#. 希望的寄託
+msgctxt "UI_Inventory_MR_Prodigy"
+msgid "THE PRODIGY"
+msgstr ""
+
+#. 昏迷
+msgctxt "UI_Inventory_MR_Revive"
+msgid "WAKE UP, JOHN"
+msgstr ""
+
+#. 靈魂之歌
+msgctxt "UI_Inventory_MR_Singing"
+msgid "SONG"
+msgstr ""
+
+#. 一個人生活
+msgctxt "UI_Inventory_MR_StayAlone"
+msgid "LEAVE ME ALONE"
+msgstr ""
+
+#. 百年的希望
+msgctxt "UI_Inventory_MR_Wakeup"
+msgid "OUR LAST HOPE"
+msgstr ""
+
+#. 引路者的課程
+msgctxt "UI_Inventory_MR_WithElder"
+msgid "GUIDANCE"
+msgstr ""
+
+#. 製作人員列表
+msgctxt "UI_Inventory_Slide_Credit"
+msgid "CREDITS"
+msgstr ""
+
+#. 橋的盡頭
+msgctxt "UI_Inventory_Slide_EnterUniverse"
+msgid "END OF THE BRIDGE"
+msgstr ""
+
+#. 洪水般的瘟疫
+msgctxt "UI_Inventory_Slide_History"
+msgid "THE PLAGUE"
+msgstr ""
+
+#. 斷掉的橋
+msgctxt "UI_Inventory_Slide_Rocket13"
+msgid "A BROKEN BRIDGE"
+msgstr ""
+
+#. 寂靜的發射
+msgctxt "UI_Inventory_Slide_Rocket14"
+msgid "SILENCE"
+msgstr ""
+
+#. 自信的崩解
+msgctxt "UI_Inventory_Slide_Rocket18"
+msgid "SHATTERED CONFIDENCE"
+msgstr ""
+
+#. 未知的失敗
+msgctxt "UI_Inventory_Slide_RocketFall"
+msgid "ANOTHER FAILURE"
+msgstr ""
+
+#. 希望的火箭
+msgctxt "UI_Inventory_Slide_RocketFinal"
+msgid "ROCKET OF HOPE"
+msgstr ""
+
+#. 冬眠甦醒
+msgctxt "UI_Inventory_Slide_Wakeup"
+msgid "DEACTIVATION"
+msgstr ""
+
+#. 舊世界的材料
+msgctxt "UI_Inventory_TitleCollectable"
+msgid "MATERIALS"
+msgstr ""
+
+#. 動畫
+msgctxt "UI_Inventory_TitleCutscene"
+msgid "CUTSCENES"
+msgstr ""
+
+#. 裝備
+msgctxt "UI_Inventory_TitleEquip"
+msgid "EQUIPMENT"
+msgstr ""
+
+#. 地點
+msgctxt "UI_Inventory_TitleLandmark"
+msgid "LOCATIONS"
+msgstr ""
+
+#. 回憶
+msgctxt "UI_Inventory_TitleMemory"
+msgid "MEMORIES"
+msgstr ""
+
+#. 火箭
+msgctxt "UI_Inventory_TitleRocket"
+msgid "ROCKETS"
+msgstr ""
+
+#. 開始遊戲
+msgctxt "UI_MainMenu_Play"
+msgid "PLAY"
+msgstr ""
+
+#. 重置遊戲
+msgctxt "UI_MainMenu_ResetGame"
+msgid "RESET GAME"
+msgstr ""
+
+#. 我必須找到芳
+msgctxt "UI_Notification_BossConfirm"
+msgid "I MUST FIND FEI"
+msgstr ""
+
+#. 再想清楚一點好了
+msgctxt "UI_Notification_BossDismiss"
+msgid "LET ME PREPARE"
+msgstr ""
+
+#. 風雪開始變大了，一旦上山就無法回頭了。
+msgctxt "UI_Notification_BossMsg"
+msgid "A snowstorm's coming. Once I head up the mountains, there's no going back."
+msgstr ""
+
+#. 了解
+msgctxt "UI_Notification_CodeConfirm"
+msgid "OK"
+msgstr ""
+
+#. 錯誤：您輸入的邀請碼不正確，請檢查輸入內容後再試一次。
+msgctxt "UI_Notification_CodeFailInvalid"
+msgid "ERROR: The code you entered is invalid. Please make sure you input the correct code."
+msgstr ""
+
+#. 錯誤：您的帳號已經輸入過邀請碼了，一個帳號只能輸入一組邀請碼喔！
+msgctxt "UI_Notification_CodeFailAlreadyEntered"
+msgid "ERROR: Your account has already used a code. Each account can only use one code!"
+msgstr ""
+
+#. 錯誤：您輸入的邀請碼己經過期，無法使用了，很抱歉。
+msgctxt "UI_Notification_CodeFailExpired"
+msgid "ERROR: The code you entered has expired. Please try a new one."
+msgstr ""
+
+#. 錯誤：連線失敗。請檢查您的網路連線後再試一次。
+msgctxt "UI_Notification_CodeFailError"
+msgid "ERROR: Connection error. Please check your connection and try again."
+msgstr ""
+
+#. 錯誤：您無法輸入自己的邀請碼。
+msgctxt "UI_Notification_CodeFailSelf"
+msgid "ERROR: You cannot enter your own code."
+msgstr ""
+
+#. 您選擇了跳過，提醒您：之後仍然可在商店頁面中輸入邀請碼喔。
+msgctxt "UI_Notification_CodeRemindMsg"
+msgid "You can always come back to enter the code in the shop menu!"
+msgstr ""
+
+#. 提醒您...
+msgctxt "UI_Notification_CodeRemindTitle"
+msgid "REMINDER"
+msgstr ""
+
+#. 恭喜！您剛剛收到了兩顆靈魂石！
+msgctxt "UI_Notification_CodeSuccessMsg"
+msgid "Congrats, you have received two soul stones in your inventory!"
+msgstr ""
+
+#. 成功！
+msgctxt "UI_Notification_CodeSuccessTitle"
+msgid "SUCCESS"
+msgstr ""
+
+#. 是
+msgctxt "UI_Notification_DefConfirm"
+msgid "YES"
+msgstr ""
+
+#. 否
+msgctxt "UI_Notification_DefDismiss"
+msgid "NO"
+msgstr ""
+
+#. 感謝您的支持
+msgctxt "UI_Notification_GotSocial"
+msgid "Thank you for supporting us!"
+msgstr ""
+
+#. 抵達時間
+msgctxt "UI_Notification_MapArrivalTime"
+msgid "I'll get there"
+msgstr ""
+
+#. 今天
+msgctxt "UI_Notification_MapArrivalToday"
+msgid "today at"
+msgstr ""
+
+#. 明天
+msgctxt "UI_Notification_MapArrivalTomorrow"
+msgid "tomorrow at"
+msgstr ""
+
+#. 算了
+msgctxt "UI_Notification_MapCancel"
+msgid "NEVERMIND"
+msgstr ""
+
+#. 出發
+msgctxt "UI_Notification_MapConfirm"
+msgid "HEAD OUT"
+msgstr ""
+
+#. 應該晚點就能到{0}
+msgctxt "UI_Notification_MapMsg"
+msgid "Should arrive at {0} later today."
+msgstr ""
+
+#. 還好有帳篷就能撐到{0}
+msgctxt "UI_Notification_MapMsgCamp"
+msgid "I could make it to {0} with my camping gear."
+msgstr ""
+
+#. 沒時間去其他地方了，要回火箭工廠了嗎？
+msgctxt "UI_Notification_MapNoTimeReturn"
+msgid "Head back to the Opus Rocket Factory?"
+msgstr ""
+
+#. 購買失敗，請確認網路連線以及登入帳號無誤
+msgctxt "UI_Notification_PayFail"
+msgid "Payment failed."
+msgstr ""
+
+#. 購買成功，謝謝您的支持！
+msgctxt "UI_Notification_PaySuccess"
+msgid "Payment successful. Thank you for your support!"
+msgstr ""
+
+#. 購買成功，謝謝您的支持！ 提醒：您隨時可以回到商城介面進行裝備或卸除的動作喔！
+msgctxt "UI_Notification_PayBundleSuccess"
+msgid "Payment successful. Thank you for your support! You can always return to the in-game shop to equip or unequip your purchases."
+msgstr ""
+
+#. 確定要重置遊戲，遊戲中所有進度將會重置？
+msgctxt "UI_Notification_ResetGame"
+msgid "Resetting will delete all your progress. Are you sure?"
+msgstr ""
+
+#. 是
+msgctxt "UI_Notification_ReturnConfirm"
+msgid "YES"
+msgstr ""
+
+#. 否
+msgctxt "UI_Notification_ReturnDismiss"
+msgid "NO"
+msgstr ""
+
+#. 要回火箭工廠了嗎？
+msgctxt "UI_Notification_ReturnMsg"
+msgid "Head back to the Opus Rocket Factory?"
+msgstr ""
+
+#. 感謝您邀請了十位朋友一同體驗遊戲 你的完整遊戲馬上解鎖給您！
+msgctxt "UI_Notification_ShareFullMsg"
+msgid ""
+msgstr ""
+
+#. 恭喜！
+msgctxt "UI_Notification_ShareFullTitle"
+msgid "CONGRATS!"
+msgstr ""
+
+#. 你已經邀請了{0}位朋友！ 集滿10位朋友好直接解鎖完整遊戲！
+msgctxt "UI_Notification_ShareHalfMsg"
+msgid ""
+"You have invited {0} friends! \n"
+"Invite 10 friends to unlock full version!"
+msgstr ""
+
+#. 恭喜你快完成目標了！
+msgctxt "UI_Notification_ShareHalfTitle"
+msgid "ALMOST THERE!"
+msgstr ""
+
+#. 要不要使用帳篷呢?
+msgctxt "UI_Notification_UseCampMsg"
+msgid "Use camping equipment?"
+msgstr ""
+
+#. 不好意思打斷您的體驗！我們只是間小小的獨立遊戲公司，您願意花短短的30秒，用評分支持我們嘛？
+msgctxt "UI_Notification_RateUsLinkTitle"
+msgid "Sorry to interrupt! Would you mind helping us by rating OPUS on the app store? It means a lot to tiny studios like us!"
+msgstr ""
+
+#. 沒問題！
+msgctxt "UI_Notification_RateUsLinkYes"
+msgid "Sure!"
+msgstr ""
+
+#. 不要
+msgctxt "UI_Notification_RateUsLinkNo"
+msgid "Never"
+msgstr ""
+
+#. 返回主選單？
+msgctxt "UI_Notification_BackMainMenuTitle"
+msgid "Return to the main menu?"
+msgstr ""
+
+#. 是否要離開遊戲？
+msgctxt "UI_Notification_ExitGameTitle"
+msgid "Exit the game?"
+msgstr ""
+
+#. 仍有許多靈魂因為未完成的心願而困在世界中，你能幫助靈魂完成心願回到銀河嗎？
+msgctxt "UI_Notification_EndingToFreemodeTitle"
+msgid "There are many wandering spirits who still have lingering regrets. Will you help them return to the cosmos? This will start Free Play Mode."
+msgstr ""
+
+#. 自由模式
+msgctxt "UI_Notification_EndingToFreemodeYes"
+msgid "FREE ROAMING"
+msgstr ""
+
+#. 返回主選單
+msgctxt "UI_Notification_EndingToFreemodeNo"
+msgid "BACK TO MAIN MENU"
+msgstr ""
+
+#. 您的帳號ID：
+msgctxt "UI_Options_Account"
+msgid "YOUR ACCOUNT ID: "
+msgstr ""
+
+#. 難易度：一般模式
+msgctxt "UI_Options_BtnDifficultyChallenge"
+msgid "DIFFICULTY: NORMAL"
+msgstr ""
+
+#. 難易度：故事模式
+msgctxt "UI_Options_BtnDifficultyStory"
+msgid "DIFFICULTY: STORY"
+msgstr ""
+
+#. 使用兌換碼
+msgctxt "UI_Options_BtnRedeem"
+msgid "REDEEM"
+msgstr ""
+
+#. 系統
+msgctxt "UI_Options_Title"
+msgid "OPTIONS"
+msgstr ""
+
+#. 語言
+msgctxt "UI_Options_TitleLanguage"
+msgid "LANGUAGE"
+msgstr ""
+
+#. 其他
+msgctxt "UI_Options_TitleOther"
+msgid "OTHER"
+msgstr ""
+
+#. 當然～我想知道兩人後續的發展！
+msgctxt "UI_Paywall_Confirm"
+msgid "I need to keep playing!"
+msgstr ""
+
+#. 嗯...讓我再考慮一下...
+msgctxt "UI_Paywall_Dismiss"
+msgid "Let's see what else you got."
+msgstr ""
+
+#. 很抱歉打斷您，如果喜歡約翰與芳的故事，可以考慮解鎖完整版的OPUS！感謝您的贊助與支持！
+msgctxt "UI_Paywall_Msg"
+msgid "To find out what's next, please unlock the full game. Your support helps us make more games!"
+msgstr ""
+
+#. 感謝您體驗OPUS
+msgctxt "UI_Paywall_Title"
+msgid "THANK YOU FOR PLAYING OPUS"
+msgstr ""
+
+#. 存檔中
+msgctxt "UI_Save_Title"
+msgid "SAVING"
+msgstr ""
+
+#. N
+msgctxt "UI_Scavenge_CompassNorth"
+msgid "N"
+msgstr ""
+
+#. E
+msgctxt "UI_Scavenge_CompassEast"
+msgid "E"
+msgstr ""
+
+#. S
+msgctxt "UI_Scavenge_CompassSouth"
+msgid "S"
+msgstr ""
+
+#. W
+msgctxt "UI_Scavenge_CompassWest"
+msgid "W"
+msgstr ""
+
+#. 小時
+msgctxt "UI_Scavenge_Time"
+msgid "HOURS"
+msgstr ""
+
+#. 請選擇接下來想體驗的模式
+msgctxt "UI_Select_TitleMode"
+msgid "SELECT POST-ENDING MODE"
+msgstr ""
+
+#. 別擔心，您隨時可以回到主選單切換模式
+msgctxt "UI_Select_ReminderMode"
+msgid "You can change modes by returning to the main menu."
+msgstr ""
+
+#. 重玩結局
+msgctxt "UI_Select_BtnPostNormal"
+msgid "REPLAY MODE"
+msgstr ""
+
+#. 適合想重新體驗一次結局的朋友。 提醒您：此模式專為體驗結局使用，此模式的所有行為，我們並不會為您存檔。
+msgctxt "UI_Select_DescPostNormal"
+msgid "Reexperience the ending."
+msgstr ""
+
+#. 自由模式
+msgctxt "UI_Select_BtnPostFree"
+msgid "FREE ROAMING"
+msgstr ""
+
+#. 適合想專心探索整個世界的您，您可以在一個不被打擾的地方，繼續完成所有的支線任務。
+msgctxt "UI_Select_DescPostFree"
+msgid "Return to someplace quiet to continue exploring."
+msgstr ""
+
+#. 請選擇接下來想體驗的模式
+msgctxt "UI_Select_TitleDifficulty"
+msgid "SELECT DIFFICULTY"
+msgstr ""
+
+#. 別擔心，您隨時可以在系統選單切換模式
+msgctxt "UI_Select_ReminderDifficulty"
+msgid "You can change modes anytime in the options menu."
+msgstr ""
+
+#. 一般模式（建議）
+msgctxt "UI_Select_BtnDifficultyNormal"
+msgid "NORMAL MODE (RECOMMENDED)"
+msgstr ""
+
+#. 您會面臨一些挑戰，但偶而我們也會給您小小的提示。
+msgctxt "UI_Select_DescDifficultyNormal"
+msgid "For players who like to play the game with a pinch of challenge, and with less hand holding."
+msgstr ""
+
+#. 故事模式
+msgctxt "UI_Select_BtnDifficultyStory"
+msgid "STORY MODE"
+msgstr ""
+
+#. 您可以單純享受故事，不用擔心卡關，或任何迷失的風險。
+msgctxt "UI_Select_DescDifficultyStory"
+msgid "For players who just want to enjoy the story, hints are provided frequently."
+msgstr ""
+
+#. 確定
+msgctxt "UI_Select_BtnConfirm"
+msgid "CONTINUE"
+msgstr ""
+
+#. 馬上開始
+msgctxt "UI_Share_BtnCopy"
+msgid "SHARE NOW"
+msgstr ""
+
+#. 只要邀請朋友下載遊戲輸入邀請碼，你就能免費解鎖完整版遊戲喔！你的朋友們還可以獲得額外靈魂石，根本雙贏！
+msgctxt "UI_Share_Details"
+msgid "Invite your friends to enter this code in game to unlock the full version! Additionally, they will receive soul stones as a reward. It's a win-win!"
+msgstr ""
+
+#. 現在進度
+msgctxt "UI_Share_Goal"
+msgid "YOUR PROGRESS"
+msgstr ""
+
+#. 邀請10位好友，免費解鎖完整版！
+msgctxt "UI_Share_Title"
+msgid ""
+"Invite 10 friends to unlock\n"
+"the full game for free!"
+msgstr ""
+
+#. 輸入朋友的邀請碼
+msgctxt "UI_Shop_BtnCodeInput"
+msgid "ENTER INVITE CODE"
+msgstr ""
+
+#. 免費解鎖完整版
+msgctxt "UI_Shop_BtnShare"
+msgid "UNLOCK FULL GAME FOR FREE"
+msgstr ""
+
+#. 分享遊戲給朋友
+msgctxt "UI_Shop_BtnShareUnlocked"
+msgid "INVITE FRIENDS TO PLAY"
+msgstr ""
+
+#. 裝備
+msgctxt "UI_Shop_Equip"
+msgid "EQUIP"
+msgstr ""
+
+#. 立即前往
+msgctxt "UI_Shop_Free"
+msgid "CHECK OUT NOW"
+msgstr ""
+
+#. 立即前往
+msgctxt "UI_Shop_Link"
+msgid "CHECK OUT NOW"
+msgstr ""
+
+#. 購買
+msgctxt "UI_Shop_PriceNoFound"
+msgid "BUY"
+msgstr ""
+
+#. 沒問題的，我們有專為您設計的方案～
+msgctxt "UI_Shop_ShareDesc"
+msgid "Not a problem! Here's how to get a free copy!"
+msgstr ""
+
+#. 我沒有辦法付費，但我還是好想玩！
+msgctxt "UI_Shop_ShareTitle"
+msgid "I CAN'T PAY BUT I STILL WANT TO PLAY!"
+msgstr ""
+
+#. 哇，太感謝了！你可以用下面的方法介紹給你朋友喔！
+msgctxt "UI_Shop_ShareDescUnlocked"
+msgid "Wow, thanks! Here's what you can do!"
+msgstr ""
+
+#. 超想分享靈魂之橋啦！
+msgctxt "UI_Shop_ShareTitleUnlocked"
+msgid "I WANT MORE PEOPLE TO PLAY THIS GAME!"
+msgstr ""
+
+#. 遊戲組合包
+msgctxt "UI_Shop_TabBundle"
+msgid "GAME BUNDLES"
+msgstr ""
+
+#. 其他好東西
+msgctxt "UI_Shop_TabMerchandise"
+msgid "OTHER COOL STUFF"
+msgstr ""
+
+#. 有品味的生活
+msgctxt "UI_Shop_TabPet"
+msgid "SURVIVING WITH STYLE"
+msgstr ""
+
+#. 關心我們的消息
+msgctxt "UI_Shop_TabSocial"
+msgid "FOLLOW US"
+msgstr ""
+
+#. 靈魂石
+msgctxt "UI_Shop_TabSoulStone"
+msgid "SOULSTONES"
+msgstr ""
+
+#. 卸下
+msgctxt "UI_Shop_Unequip"
+msgid "UNEQUIP"
+msgstr ""
+
+#. 是誰路過我身邊...
+msgctxt "UI_Voice_Colle01"
+msgid "Who is it..."
+msgstr ""
+
+#. 把我帶走...把我帶走...
+msgctxt "UI_Voice_Colle02"
+msgid "Take me back..."
+msgstr ""
+
+#. 幫幫我...拿穩一點
+msgctxt "UI_Voice_Colle03"
+msgid "Hold it carefully..."
+msgstr ""
+
+#. 帶走我們...
+msgctxt "UI_Voice_ColleAntiq01"
+msgid "Take us back..."
+msgstr ""
+
+#. 你會幫我們的...幫我們的對吧？
+msgctxt "UI_Voice_ColleAntiq02"
+msgid "You will help us, right?"
+msgstr ""
+
+#. 這些都是我們的記憶...
+msgctxt "UI_Voice_ColleAntiq03"
+msgid "These are our memories..."
+msgstr ""
+
+#. 我們由銀河而來...由銀河而去...
+msgctxt "UI_Voice_ColleSoul01"
+msgid "From stars... to stars..."
+msgstr ""
+
+#. 我們由銀河而來...由銀河而去...
+msgctxt "UI_Voice_ColleSoul02"
+msgid "From stars... to stars..."
+msgstr ""
+
+#. 我們由銀河而來...由銀河而去...
+msgctxt "UI_Voice_ColleSoul03"
+msgid "From stars... to stars..."
+msgstr ""
+
+#. 火箭為什麼還沒有升空...
+msgctxt "UI_Voice_ColleJunk01"
+msgid "Is the rocket ready..."
+msgstr ""
+
+#. 銀河...銀河...
+msgctxt "UI_Voice_ColleJunk02"
+msgid "Stars... the stars..."
+msgstr ""
+
+#. 請帶我走...
+msgctxt "UI_Voice_ColleJunk03"
+msgid "Please take me back..."
+msgstr ""
+
+#. 女巫去哪了...
+msgctxt "UI_Voice_ColleJunkGirlDisable01"
+msgid "Where is she..."
+msgstr ""
+
+#. 怎麼辦...
+msgctxt "UI_Voice_ColleJunkGirlDisable02"
+msgid "Do something..."
+msgstr ""
+
+#. 快找到她！
+msgctxt "UI_Voice_ColleJunkGirlDisable03"
+msgid "Find her!"
+msgstr ""
+
+#. 你還在做什麼！
+msgctxt "UI_Voice_ColleThreat01"
+msgid "What's taking so long?!"
+msgstr ""
+
+#. 我等不及了！
+msgctxt "UI_Voice_ColleThreat02"
+msgid "I can't wait any longer!"
+msgstr ""
+
+#. 說好的橋呢？
+msgctxt "UI_Voice_ColleThreat03"
+msgid "Where is the bridge?"
+msgstr ""
+
+#. 火箭如果有這個材料...就有辦法升空了...
+msgctxt "UI_Voice_ColleUniq01"
+msgid "With these materials... the rocket will fly..."
+msgstr ""
+
+#. 這是重要的材料...要帶給女巫...
+msgctxt "UI_Voice_ColleUniq02"
+msgid "These are important... bring them to the witch..."
+msgstr ""
+
+#. 拿穩了...火箭不能沒有這些材料...
+msgctxt "UI_Voice_ColleUniq03"
+msgid "Careful... the rocket needs them..."
+msgstr ""
+
+#. 我想回到銀河...
+msgctxt "UI_Voice_Ghost_General01"
+msgid "I want to go back..."
+msgstr ""
+
+#. 請把我們帶走...
+msgctxt "UI_Voice_Ghost_General02"
+msgid "Take us back..."
+msgstr ""
+
+#. 銀河...在那？
+msgctxt "UI_Voice_Ghost_General03"
+msgid "Where... the stars..."
+msgstr ""
+
+#. 放我走～放我走！
+msgctxt "UI_Voice_Ghost_Hetmis01"
+msgid "Let us out!"
+msgstr ""
+
+#. 我沒有生病...我沒有！
+msgctxt "UI_Voice_Ghost_Hetmis02"
+msgid "I'm not sick! Let me out!"
+msgstr ""
+
+#. 幫我找找他...他一定在這！
+msgctxt "UI_Voice_Ghost_Hetmis03"
+msgid "Help me find him! He must be here!"
+msgstr ""
+
+#. 宇宙葬快開始了...
+msgctxt "UI_Voice_Ghost_MalkuthLaunchSite01"
+msgid "The burial is about to start..."
+msgstr ""
+
+#. 快點！快點！
+msgctxt "UI_Voice_Ghost_MalkuthLaunchSite02"
+msgid "Hurry up!"
+msgstr ""
+
+#. ...好期待呢...
+msgctxt "UI_Voice_Ghost_MalkuthLaunchSite03"
+msgid "So excited..."
+msgstr ""
+
+#. 為什麼一個人在這？
+msgctxt "UI_Voice_Ghost_MalkuthTown01"
+msgid "Why are you here alone?"
+msgstr ""
+
+#. 你做得很好...
+msgctxt "UI_Voice_Ghost_MalkuthTown02"
+msgid "You've done well..."
+msgstr ""
+
+#. 別亂跑...要小心...
+msgctxt "UI_Voice_Ghost_MalkuthTown03"
+msgid "Be careful..."
+msgstr ""
+
+#. 說過不准亂跑的
+msgctxt "UI_Voice_Ghost_ManMemory01"
+msgid "Told you to stop running..."
+msgstr ""
+
+#. 沒問題的...
+msgctxt "UI_Voice_Ghost_ManMemory02"
+msgid "He'll be fine..."
+msgstr ""
+
+#. 就差一點點了...
+msgctxt "UI_Voice_Ghost_ManMemory03"
+msgid "Just a little further..."
+msgstr ""
+
+#. 走了喔，你在做什麼？
+msgctxt "UI_Voice_Ghost_ManMemory04"
+msgid "We're leaving. What are you doing?"
+msgstr ""
+
+#. 他只想把我丟下！
+msgctxt "UI_Voice_Ghost_ManMemory05"
+msgid "He just wants to leave me behind!"
+msgstr ""
+
+#. 好燙～好燙～
+msgctxt "UI_Voice_Ghost_NewMalkuthMine01"
+msgid "Fire... it hurts..."
+msgstr ""
+
+#. 這裡危險..快走
+msgctxt "UI_Voice_Ghost_NewMalkuthMine02"
+msgid "It's dangerous here. Go.."
+msgstr ""
+
+#. 我好痛...為什麼是我！
+msgctxt "UI_Voice_Ghost_NewMalkuthMine03"
+msgid "The pain... why me..."
+msgstr ""
+
+#. 要開始了嗎？
+msgctxt "UI_Voice_Ghost_OpusRockets01"
+msgid "Is it about to start?"
+msgstr ""
+
+#. 聽我說...
+msgctxt "UI_Voice_Ghost_OpusRockets02"
+msgid "Listen..."
+msgstr ""
+
+#. 為什麼火箭還沒有升空...
+msgctxt "UI_Voice_Ghost_OpusRockets03"
+msgid "Why isn't the rocket ready..."
+msgstr ""
+
+#. 真是的，根本沒檢討
+msgctxt "UI_Voice_Ghost_SacredLandFront01"
+msgid "He's not learning his lesson..."
+msgstr ""
+
+#. 我們做不出來...
+msgctxt "UI_Voice_Ghost_SacredLandFront02"
+msgid "We can't make it..."
+msgstr ""
+
+#. 天哪，你在幹嘛
+msgctxt "UI_Voice_Ghost_SacredLandFront03"
+msgid "What are you doing..."
+msgstr ""
+
+#. 一切交給妳了
+msgctxt "UI_Voice_Ghost_SacredLandGirl01"
+msgid "You're our only hope."
+msgstr ""
+
+#. 女巫妳會幫我帶路嗎？
+msgctxt "UI_Voice_Ghost_SacredLandGirl02"
+msgid "You will guide us... right?"
+msgstr ""
+
+#. 妳得習慣...
+msgctxt "UI_Voice_Ghost_SacredLandGirl03"
+msgid "You must carry on..."
+msgstr ""
+
+#. 急什麼！別亂走
+msgctxt "UI_Voice_Ghost_SacredLandMan01"
+msgid "Stop running around!"
+msgstr ""
+
+#. 你喜歡宇宙葬嗎？
+msgctxt "UI_Voice_Ghost_SacredLandMan02"
+msgid "You like space burials?"
+msgstr ""
+
+#. 約翰我們走了喔
+msgctxt "UI_Voice_Ghost_SacredLandMan03"
+msgid "We're leaving, John..."
+msgstr ""
+
+#. 嗚...身體有點不舒服了...
+msgctxt "UI_Voice_HPWarningFirst"
+msgid "Ugh... not feeling so well."
+msgstr ""
+
+#. 身體越來越重了，這樣下去不行啊...
+msgctxt "UI_Voice_HPWarningHalf"
+msgid "Feeling heavy, can't walk any further..."
+msgstr ""
+
+#. 意識變得不太清楚了...
+msgctxt "UI_Voice_HPWarningLow"
+msgid "Feeling hazy..."
+msgstr ""
+
+#. 好痛啊...
+msgctxt "UI_Voice_LossLife"
+msgid "That hurts..."
+msgstr ""
+
+#. 花了不少時間...
+msgctxt "UI_Voice_LossTime"
+msgid "That took a while..."
+msgstr ""
+
+#. 如果有露營設備的話，至少可以多待一個晚上吧。
+msgctxt "UI_Voice_MissingCampEquip"
+msgid "I could stay out for a night if I had camping equipment."
+msgstr ""
+
+#. 如果有金屬切割器應該切得下來才對。
+msgctxt "UI_Voice_MissingMetalCutters"
+msgid "I need a metal cutter to cut this down."
+msgstr ""
+
+#. 有金屬切割器的話，應該可以切開一個入口才對...
+msgctxt "UI_Voice_MissingMetalCuttersFence"
+msgid "I could cut an opening with a metal cutter."
+msgstr ""
+
+#. 如果把探照燈做好，應該可以在裡面找到些東西。
+msgctxt "UI_Voice_MissingSearchLight"
+msgid "Too dark. I need to fix the Flashlight first."
+msgstr ""
+
+#. 沒有一雙雪靴還真難在雪地上行走...
+msgctxt "UI_Voice_MissingSnowBoots"
+msgid "It's hard to move without snow boots..."
+msgstr ""
+
+#. 腳好痛啊，走不快了...
+msgctxt "UI_Voice_ReduceSpeed"
+msgid "Ngh... my leg. Can't walk any faster."
+msgstr ""
+
+#. 眼睛看不太清楚了...
+msgctxt "UI_Voice_ReduceVision"
+msgid "I can barely see."
+msgstr ""
+
+#. 按住並拖曳進行移動
+msgctxt "UI_Voice_TuteNav"
+msgid "Hold and drag to move"
+msgstr ""
+
+#. 要去更遠的地方可能還需要多準備一些裝備...
+msgctxt "UI_Voice_UnknownCampEquip"
+msgid "I'll need some equipment to get further."
+msgstr ""
+
+#. 廢棄的金屬材料...有辦法可以切回去嗎？
+msgctxt "UI_Voice_UnknownMetalCutters"
+msgid "Scrap metal... if only I had some way to cut it down."
+msgstr ""
+
+#. 雖然被鐵網擋住了但是有器具的話應該可以輕易切除它
+msgctxt "UI_Voice_UnknownMetalCuttersFence"
+msgid "If only I could cut an opening in this fence..."
+msgstr ""
+
+#. 這棟建築物損壞嚴重，裡面的光源都被蓋住了什麼都看不到...
+msgctxt "UI_Voice_UnknownSearchLight"
+msgid "This place is too dark. I can't see without a light source."
+msgstr ""
+
+#. 積雪太深實在太難走了，不知道有什麼辦法？
+msgctxt "UI_Voice_UnknownSnowBoots"
+msgid "The snow is too thick. I can't wade through this."
+msgstr ""
+
+msgid "<!empty>"
+msgstr ""
+
+#. Special Thanks   Chia-Yu Chen Lee-Kuo Chen Soking Wang Johnson Lin Yen Katsu Eric Tang Jin Smoking Maxwell Peng Kin Nancy Chuang Andy Tsai Aggie Shu-An Tsai Clementine Shiue-Jie Chen Josh Tse-Hsu Chen Henry Wang Peter Pan Kinono Huang Yen-Lin Shao Lin Huang Yen-Lin Lynn Li Jie Yu TaiYou Ye
+msgctxt "Slide_Credit_Thanks"
+msgid ""
+"Special Thanks \n"
+"Chia-Yu Chen\n"
+"Lee-Kuo Chen\n"
+"Soking Wang\n"
+"Johnson Lin\n"
+"Yen Katsu\n"
+"Eric Tang\n"
+"Jin\n"
+"Smoking\n"
+"Maxwell Peng\n"
+"Kin\n"
+"Nancy Chuang\n"
+"Andy Tsai\n"
+"Aggie Shu-An Tsai\n"
+"Clementine Shiue-Jie Chen\n"
+"Josh Tse-Hsu Chen\n"
+"Henry Wang\n"
+"Peter Pan\n"
+"Kinono\n"
+"Huang Yen-Lin\n"
+"Shao Lin\n"
+"Huang Yen-Lin\n"
+"Lynn Li\n"
+"Jie Yu\n"
+"TaiYou Ye"
+msgstr ""
+
+#. Development  SIGONO  Director Brian Lee  Story Su-Yi Lee Shao-Tung Tang  Game Planner Szu-Yuan Scott Chen Shao-Tung Tang Roger Kao  Artist Sam Chen Szu-Yuan Scott Chen Brian Lee Shun-Hui Kao  3D Artist Bingrun Jiang  CG Artist SkyFire  UI Designer Sam Chen  Programmer Chun-Fu Chao Max Yi-Wei Chen Tsung-Yi Li Chia-Yu Chen Chun-Chiu Liu Yi Wen Hsieh Chris Chiu  Composer/Sound Designer Triodust Chia-Wei Hsu  Project Manager Roger Kao  Marketing Yu-Lan Huang Ya-Ting Tu Ashley Hsieh
+msgctxt "Slide_Credit_Develop"
+msgid ""
+"Development\n"
+"SIGONO\n"
+"Director\n"
+"Brian Lee\n"
+"Story\n"
+"Su-Yi Lee\n"
+"Shao-Tung Tang\n"
+"Game Planner\n"
+"Szu-Yuan Scott Chen\n"
+"Shao-Tung Tang\n"
+"Roger Kao\n"
+"Artist\n"
+"Sam Chen\n"
+"Szu-Yuan Scott Chen\n"
+"Brian Lee\n"
+"Shun-Hui Kao\n"
+"3D Artist\n"
+"Bingrun Jiang\n"
+"CG Artist\n"
+"SkyFire\n"
+"UI Designer\n"
+"Sam Chen\n"
+"Programmer\n"
+"Chun-Fu Chao\n"
+"Max Yi-Wei Chen\n"
+"Tsung-Yi Li\n"
+"Chia-Yu Chen\n"
+"Chun-Chiu Liu\n"
+"Yi Wen Hsieh\n"
+"Chris Chiu\n"
+"Composer/Sound Designer\n"
+"Triodust\n"
+"Chia-Wei Hsu\n"
+"Project Manager\n"
+"Roger Kao\n"
+"Marketing\n"
+"Yu-Lan Huang\n"
+"Ya-Ting Tu\n"
+"Ashley Hsieh"
+msgstr ""
+
+#. Ending Theme  21g (ft.Fei)  Music by Triodust Lyrics by Triodust Vocals by Cikado Sound by Chia-Wei Hsu  In-game Fonts M+ FONTS by Coji Morishita  Noto Sans from Google  Title Fonts Glober by Ivan Petrov  Glacial Indifference by Alfredo Marco Pradil  Localization Ryo Shimazaki Sam Chen  Proofreading Krystal Loh Ling-Yun Tang  QA bugtracker Ting  Customer Support Yun-Zhen Zhang
+msgctxt "Slide_Credit_Other"
+msgid ""
+"Ending Theme \n"
+"21g (ft.Fei)\n"
+"Music by Triodust\n"
+"Lyrics by Triodust\n"
+"Vocals by Cikado\n"
+"Sound by Chia-Wei Hsu\n"
+"In-game Fonts\n"
+"M+ FONTS\n"
+"by Coji Morishita\n"
+"Noto Sans\n"
+"from Google\n"
+"Title Fonts\n"
+"Glober\n"
+"by Ivan Petrov\n"
+"Glacial Indifference\n"
+"by Alfredo Marco Pradil\n"
+"Localization\n"
+"Ryo Shimazaki\n"
+"Sam Chen\n"
+"Proofreading\n"
+"Krystal Loh\n"
+"Ling-Yun Tang\n"
+"QA\n"
+"bugtracker\n"
+"Ting\n"
+"Customer Support\n"
+"Yun-Zhen Zhang"
+msgstr ""
+
+#. 關於我們  SIGONO 是一家小小的遊戲公司，我們的作品OPUS志在提供與眾不同的故事體驗，並希望我們的努力能為您們創造感動，這會是我們最美好的幸福。  www.sigono.com  © SIGONO INC.
+msgctxt "Slide_Credit_AboutUs"
+msgid ""
+"About Us\n"
+"SIGONO is an indie game studio that strives to create unique, heartfelt experiences that bring people joy.\n"
+"www.sigono.com\n"
+"© SIGONO INC."
+msgstr ""
+
+#. 完
+msgctxt "Slide_Fin"
+msgid "END"
+msgstr ""
+
+#. 尚未登入
+msgctxt "UI_Option_NotSignedIn"
+msgid "NOT SIGNED IN"
+msgstr ""
+
+#. 登入並綁定帳號
+msgctxt "UI_Options_BtnSignIn"
+msgid "SIGN IN"
+msgstr ""
+
+#. 上傳/下載雲端存檔
+msgctxt "UI_Options_BtnCloudSave"
+msgid "CLOUD SAVE"
+msgstr ""
+
+#. 回復購買
+msgctxt "UI_Options_BtnRestorePurchase"
+msgid "RESTORE PURCHASE"
+msgstr ""
+
+#. 解除與刪除綁定帳號
+msgctxt "UI_Options_BtnUnlinkTitle"
+msgid "Unbind and delete your account"
+msgstr ""
+
+#. 請利用電子郵件聯繫我們 support@sigono.com
+msgctxt "UI_Options_BtnUnlinkViewContent"
+msgid "Please email us if you want to unbind and delete your account at support@sigono.com"
+msgstr ""
+
+#. 稍後登入
+msgctxt "UI_Notification_BtnLater"
+msgid "LATER"
+msgstr ""
+
+#. 稍後再試
+msgctxt "UI_Notification_BtnTryLater"
+msgid "LATER"
+msgstr ""
+
+#. 返回
+msgctxt "UI_Notification_BtnBack"
+msgid "BACK"
+msgstr ""
+
+#. 再試一次
+msgctxt "UI_Notification_BtnTryAgain"
+msgid "TRY AGAIN"
+msgstr ""
+
+#. 了解
+msgctxt "UI_Notification_BtnOk"
+msgid "OK"
+msgstr ""
+
+#. 您目前是訪客身份，提醒您：一旦移除了遊戲，您的紀錄檔和購買物品都會消失！為避免上述意外，我們強烈建議登入以綁定帳號。您也可稍後再於設定選項中登入。
+msgctxt "UI_Notification_AccountWarning"
+msgid "NOTICE: You are currently playing as a guest. Be aware that if you uninstall the game, your saves and purchases will be lost! We highly recommend signing in. You can sign in later in the options menu."
+msgstr ""
+
+#. 登入失敗，請檢查您的網路設定 並重新嘗試。
+msgctxt "UI_Notification_AccountSignInFailed"
+msgid "Sign in failed. Please check your network connection and try again."
+msgstr ""
+
+#. 登入成功！您現在可以在設定選項中上傳遊戲的紀錄檔。您的購買資料則會在登入時自動進行同步。
+msgctxt "UI_Notification_AccountSignInSuccess"
+msgid "You've signed in with your account. You can now upload your save file in the options menu. Purchased items will sync through different devices."
+msgstr ""
+
+#. 地球在上，看起來雲端已有您曾經上傳的紀錄檔，您希望下載雲端資料到本地端嗎？
+msgctxt "UI_Notification_AccountLoadExisting"
+msgid ""
+"There's existing save data in the account you've signed into.\n"
+"Do you want to load it?"
+msgstr ""
+
+#. 連接失敗，請檢查您的網路設定 並重新嘗試。 您也可以稍後再於設定選項中下載雲端紀錄檔。
+msgctxt "UI_Notification_AccountLoadFail"
+msgid ""
+"Error: Connection failed. Please check your network connection and try again.\n"
+"You can load your cloud save later in the Options menu."
+msgstr ""
+
+#. 接下來會以全新的紀錄檔開始遊戲。若您改變想法，之後仍可在設定選項中下載您的雲端紀錄檔。
+msgctxt "UI_Notification_AccountLoadNew"
+msgid "You will be starting with a new save file. You can always load your old save data in the Options menu."
+msgstr ""
+
+#. 上傳您的本地端紀錄檔到雲端。 警告：如果您的雲端已有資料，這會將它覆寫過去。  您確定要覆寫嗎？
+msgctxt "UI_Notification_CloudUpload"
+msgid ""
+"Choosing this option will upload your local save to the cloud to OVERWRITE the existing cloud save.\n"
+"Are you sure this is what you want?"
+msgstr ""
+
+#. 您的本地端紀錄檔已成功上傳到雲端！
+msgctxt "UI_Notification_CloudUploadSuccess"
+msgid "Your local save has been uploaded to the cloud."
+msgstr ""
+
+#. 下載您的雲端紀錄檔到本地端。 警告：您目前的本地端資料將會被覆寫掉。  您確定要覆寫嗎？
+msgctxt "UI_Notification_CloudDownload"
+msgid ""
+"Choosing this option will DISCARD your local save, and use your cloud save data to replace it.\n"
+"Are you sure this is what you want?"
+msgstr ""
+
+#. 雲端紀錄檔下載成功，馬上為您重新啟動遊戲！
+msgctxt "UI_Notification_CloudDownloadSuccess"
+msgid "Cloud save loaded. The game will start now."
+msgstr ""
+
+#. 收據驗證失敗，請檢查您的網路設定並重新嘗試。或直接尋求我們的客服支援：support@sigono.com
+msgctxt "UI_Notification_PayRecieptFail"
+msgid ""
+"Error: Receipt validation failed.\n"
+"Please check your internet connection and try again.\n"
+"You may also contact us for support:\n"
+"support@sigono.com"
+msgstr ""
+
+#. 連接失敗，請檢查您的網路設定 並重新嘗試。
+msgctxt "UI_Notification_ConnectionFail"
+msgid "Connection failed. Please check your network connection and try again."
+msgstr ""
+
+#. 為了避免您兌換的物品在解除安裝遊戲後消失，使用兌換碼之前請先登入並綁定帳號！
+msgctxt "UI_Notification_RedeemLogin"
+msgid "To ensure redeemed items won't be lost upon uninstalling, please sign in before using your redeem codes!"
+msgstr ""
+
+#. 恭喜！您獲得了{0}！
+msgctxt "UI_Notification_RedeemSuccess"
+msgid "Congrats! You've received {0}!"
+msgstr ""
+
+#. 錯誤的兌換碼。 請檢查您輸入的兌換碼是否正確。
+msgctxt "UI_Notification_RedeemInvalid"
+msgid "Error: Invalid code. Please make sure the code is entered correctly."
+msgstr ""
+
+#. 兌換碼已過期。 很遺憾，您輸入的兌換碼已經過了兌換的期限，還請見諒。
+msgctxt "UI_Notification_RedeemExpired"
+msgid "Error: Code expired. This code has expired and is no longer available now. Sorry."
+msgstr ""
+
+#. 您目前是訪客身份，提醒您：一旦移除了遊戲，您的購買物品 將會消失！為避免上述意外，我們強烈建議登入以綁定帳號，確保您的購買資料。
+msgctxt "UI_Notification_PurchaseGuest"
+msgid "NOTICE: You are currently playing as a guest. Be aware that if you uninstall the game, your purchases may be lost! We highly recommend signing in to keep your purchases backed up."
+msgstr ""
+
+#. 您目前是訪客身份，提醒您：一旦移除了遊戲，您兌換的物品 將會消失！為避免上述意外，我們強烈建議登入以綁定帳號，確保您的資料。
+msgctxt "UI_Notification_RedeemGuest"
+msgid "NOTICE: You are currently playing as a guest. Be aware that if you uninstall the game, your redeemed items may be lost! We highly recommend signing in to keep your data backed up."
+msgstr ""
+
+#. 回復購買成功
+msgctxt "UI_Notification_RestoreSuccess"
+msgid "Purchases successfully restored."
+msgstr ""
+
+#. 嗨！感謝您玩完了我們的作品。為了日後能做出更好的遊戲，不知道您願不願意填一個小小的問卷，幫助我們進步呢？
+msgctxt "UI_Notification_Survey"
+msgid "Hi! Thanks so much for enjoying our game. Would you care to share some of your thoughts by filling a tiny survey? It will help us make better games, and would mean a lot to us!"
+msgstr ""
+
+#. 嘖... 沒有露營裝備組過夜的話，實在沒辦法到更遠的地方。
+msgctxt "UI_Notification_MapNoCamp"
+msgid "Tsk... I can't go any further without camping equipment to travel overnight."
+msgstr ""
+
+#. 是
+msgctxt "UI_Account_DefConfirm"
+msgid "YES"
+msgstr ""
+
+#. 否
+msgctxt "UI_Account_DefDismiss"
+msgid "NO"
+msgstr ""
+
+#. 地球在上，看起來雲端已有您曾經上傳的紀錄檔，您希望下載雲端資料到本地端嗎？
+msgctxt "UI_Account_AccountLoadExisting"
+msgid ""
+"There's existing save data in the account you've signed into.\n"
+"Do you want to load it?"
+msgstr ""
+
+#. 終
+msgctxt "UI_Inventory_Slide_End"
+msgid "THE END"
+msgstr ""
+
+#. 邀請碼己經幫你複製起來了！接下來選擇你常用的社群帳號，貼上訊息分享給朋友吧！
+msgctxt "UI_Notification_CopyToClipboardDone"
+msgid "Your code is now copied!"
+msgstr ""
+
+#. 錯誤代碼
+msgctxt "UI_Notification_ServerErrorCode"
+msgid "Error Code"
+msgstr ""
+
+#. 喬瑟夫
+msgctxt "S_Watch"
+msgid "Joseph"
+msgstr ""
+
+#. 喬瑟夫 理查
+msgctxt "S_WatchFull"
+msgid "Joseph Richard"
+msgstr ""
+
+#. 羅米
+msgctxt "S_Adventurer"
+msgid "Reaumur"
+msgstr ""
+
+#. 羅米-法藍茲
+msgctxt "S_AdventurerFull"
+msgid "Reaumur Frenzel"
+msgstr ""
+
+#. 艾力克斯
+msgctxt "S_Employee"
+msgid "Alexis"
+msgstr ""
+
+#. 艾力克斯 菲利浦
+msgctxt "S_EmployeeFull"
+msgid "Alexis Phillips"
+msgstr ""
+
+#. 提姆 法蘭克
+msgctxt "S_FriendFull"
+msgid "Tim Frank"
+msgstr ""
+
+#. 傑森 卡特
+msgctxt "S_CarpenterSonFull"
+msgid "Jason Carter"
+msgstr ""
+
+#. OPUS靈魂之橋超棒的！我的邀請碼：{0} 可以拿珍貴道具！
+msgctxt "UI_Share_Text"
+msgid "Hey! Come check out OPUS: Rocket of Whispers! Here's my invite code: {0}"
+msgstr ""
+
+#. 使用 WASD 鍵移動
+msgctxt "UI_Voice_TuteNavPC"
+msgid "Move with WASD keys"
+msgstr ""
+
+#. 你先吃吧...別餓到了...
+msgctxt "UI_Voice_Ghost_MalkuthTCenter01"
+msgid "Here... don't starve yourself..."
+msgstr ""
+
+#. 地球在上...拜託保祐大家...
+msgctxt "UI_Voice_Ghost_MalkuthTCenter02"
+msgid "May the stars shine upon us..."
+msgstr ""
+
+#. 把通道鎖死！
+msgctxt "UI_Voice_Ghost_MineTrain01"
+msgid "Block the walkway...!"
+msgstr ""
+
+#. 一定是他...抓住他！
+msgctxt "UI_Voice_Ghost_MineTrain02"
+msgid "It's him... get him!"
+msgstr ""
+
+#. 祭司又去那裡祈褔了？
+msgctxt "UI_Voice_Ghost_EarthRoad01"
+msgid "The priest is there to pray again?"
+msgstr ""
+
+#. 聽說最近有攻擊事件...
+msgctxt "UI_Voice_Ghost_EarthRoad02"
+msgid "So many attacks lately..."
+msgstr ""
+
+#. 晚點來去喝一杯吧～
+msgctxt "UI_Voice_Ghost_MinerLife01"
+msgid "Let's go for a drink...!"
+msgstr ""
+
+#. 小夥子，熱鬧一下啊！
+msgctxt "UI_Voice_Ghost_MinerLife02"
+msgid "Come join us...!"
+msgstr ""
+
+#. 我應該早點給你們好日子的...
+msgctxt "UI_Voice_Ghost_Hospital01"
+msgid "I wish things could be different..."
+msgstr ""
+
+#. 我一人留下來...又有什麼意義...
+msgctxt "UI_Voice_Ghost_Hospital02"
+msgid "What's the point of living..."
+msgstr ""
+
+#. 語言
+msgctxt "UI_Language_Title"
+msgid "LANGUAGE"
+msgstr ""
+
+#. 語言
+msgctxt "UI_MainMenu_Language"
+msgid "LANGUAGE"
+msgstr ""
+
+#. 推動(L操控搖桿)移動
+msgctxt "UI_Voice_TuteNavConsole"
+msgid "Move around using the Left Stick"
+msgstr ""
+
+#. 按(A鍵)撿取物件
+msgctxt "UI_Voice_TuteScaSwitch"
+msgid "Press [A Button] to scavenge"
+msgstr ""
+
+#. 很遺憾，您輸入的兌換碼已經到達兌換上限。
+msgctxt "UI_Notification_RedeemExceed"
+msgid "The redeem code you've entered has already been used."
+msgstr ""
+
+#. 您已經輸入過這組兌換碼。
+msgctxt "UI_Notification_AlreadyEnter"
+msgid "You have already used this redeem code."
+msgstr ""
+
+#. 確定要睡覺了嗎?
+msgctxt "UI_Notification_SleepConfirm"
+msgid "Are you sure you want to sleep right now?"
+msgstr ""
+
+#. [C] 古董
+msgctxt "UI_HUDMenu_PCBtnAntique"
+msgid "[C] Artifacts"
+msgstr ""
+
+#. [E] 睡覺
+msgctxt "UI_HUDMenu_PCBtnSleep"
+msgid "[E] Sleep"
+msgstr ""
+
+#. [Q] 設定
+msgctxt "UI_HUDMenu_PCBtnOptions"
+msgid "[Q] Options"
+msgstr ""
+
+#. [Z] 道具欄
+msgctxt "UI_HUDMenu_PCBtnInventory"
+msgid "[Z] Inventory"
+msgstr ""
+
+#. [C] 返回
+msgctxt "UI_HUDMenu_PCBtnReturn"
+msgid "[C] Return"
+msgstr ""
+
+#. [C] 地圖
+msgctxt "UI_HUDMenu_PCBtnMap"
+msgid "[C] Map"
+msgstr ""
+
+#. [F] 露營
+msgctxt "UI_HUDMenu_PCBtnCamp"
+msgid "[F] Camp"
+msgstr ""
+
+#. [LSHIFT] 提示
+msgctxt "UI_HUDMenu_PCBtnHint"
+msgid "[LSHIFT] Hint"
+msgstr ""
+
+#. [Q] 任務
+msgctxt "UI_HUDAsk_PCBtnAsk"
+msgid "[Q] Tasks"
+msgstr ""
+
+#. [SPACE] 拾荒
+msgctxt "UI_Scavenge_PCBtnScavenge"
+msgid "[SPACE] Scavenge"
+msgstr ""
+
+#. [X] 火箭
+msgctxt "UI_Rocket_PCBtnRocket"
+msgid "[X] Rocket"
+msgstr ""
+
+#. 輸入朋友的邀請碼就可以得到靈魂石喔！
+msgctxt "UI_Shop_ShareDescOnlyInput"
+msgid "Receive free soul stones by entering your friend's invite code!"
+msgstr ""
+
+#. 我想輸入朋友的邀請碼
+msgctxt "UI_Shop_ShareTitleOnlyInput"
+msgid "I want to enter my friend's invite code"
+msgstr ""
+
+#. 按(A鍵)發射火箭
+msgctxt "UI_Rocket_TuteBlastOff"
+msgid "Press [A Button] to launch"
+msgstr ""
+
+#. 返回
+msgctxt "UI_GeneralSwitch_Back"
+msgid "BACK"
+msgstr ""
+
+#. 裝備
+msgctxt "UI_HUDMenuSwitch_BtnBuildEquip"
+msgid "EQUIPMENT"
+msgstr ""
+
+#. 火箭
+msgctxt "UI_HUDMenuSwitch_BtnBuildRocket"
+msgid "ROCKETS"
+msgstr ""
+
+#. 萊頓
+msgctxt "S_MineEmployee"
+msgid "Naden"
+msgstr ""
+
+#. 隱私權聲明
+msgctxt "UI_MainMenu_Privacy"
+msgid "PRIVACY POLICY"
+msgstr ""
+
+#. 連接失敗，請檢查您的網路設定 並重新嘗試。
+msgctxt "UI_Notification_AuCheckError"
+msgid "Connection failed. Please check your network connection and try again."
+msgstr ""
+
+#. 檔案下載不完全，請重新下載。
+msgctxt "UI_PackageFailed_FileNotFound"
+msgid ""
+"Game files not fully downloaded.\n"
+"Please remove game and try again."
+msgstr ""
+
+#. [G] 成就
+msgctxt "UI_HUDMenu_PCBtnAchievements"
+msgid "[G] Game Center"
+msgstr ""
+
+#. 成就
+msgctxt "UI_Achievements_TitleAchievements"
+msgid "ACHIEVEMENTS"
+msgstr ""
+
+#. 古董收藏家
+msgctxt "UI_Achievements_TitleAntiquarians"
+msgid "ANTIQUARIANS"
+msgstr ""
+
+#. 拾荒達人
+msgctxt "UI_Achievements_TitleScavengers"
+msgid "SCAVENGERS"
+msgstr ""
+
+#. 通靈師
+msgctxt "UI_Achievements_TitleWhispers"
+msgid "WHISPERERS"
+msgstr ""
+
+#. 朋友
+msgctxt "UI_Achievements_LeaderTitleFriends"
+msgid "FRIENDS"
+msgstr ""
+
+#. 世界
+msgctxt "UI_Achievements_LeaderTitleWorld"
+msgid "WORLD"
+msgstr ""
+
+#. LOADING
+msgctxt "UI_Loading"
+msgid "LOADING"
+msgstr ""
+
+#. ...我先自己找看看吧。電話需要再用。
+msgctxt "UI_Hint_CoolDown"
+msgid "...I Should do some searching first. The phone can wait."
+msgstr ""
+
+#. 開場
+msgctxt "UI_Commentary_Track01"
+msgid "HELLO"
+msgstr ""
+
+#. 開發商 SIGONO 是什麼？
+msgctxt "UI_Commentary_Track02"
+msgid "WHO IS SIGONO?"
+msgstr ""
+
+#. 為什麼要製作OPUS-靈魂之橋？
+msgctxt "UI_Commentary_Track03"
+msgid "WHY MAKE A SEQUEL?"
+msgstr ""
+
+#. 故事的靈感來自於？
+msgctxt "UI_Commentary_Track04"
+msgid "WHAT INSPIRED THE STORY?"
+msgstr ""
+
+#. 為什麼會使用宇宙葬作為主題呢？
+msgctxt "UI_Commentary_Track05"
+msgid "WHY SPACE BURIALS?"
+msgstr ""
+
+#. 一開始是個三角戀愛的故事
+msgctxt "UI_Commentary_Track06"
+msgid "LOVE TRIANGLE"
+msgstr ""
+
+#. 想製作一個巨大的世界
+msgctxt "UI_Commentary_Track07"
+msgid "CREATING VASTNESS"
+msgstr ""
+
+#. 曾經是個生存遊戲
+msgctxt "UI_Commentary_Track08"
+msgid "A SURVIVAL GAME"
+msgstr ""
+
+#. 關於結局，我們想說的是...
+msgctxt "UI_Commentary_Track09"
+msgid "ABOUT THE ENDING"
+msgstr ""
+
+#. 最後大合唱的祕密...
+msgctxt "UI_Commentary_Track10"
+msgid "THE CHORUS"
+msgstr ""
+
+#. 感謝所有支持我們的朋友
+msgctxt "UI_Commentary_Track11"
+msgid "THANK YOU"
+msgstr ""
+
+#. 最後...
+msgctxt "UI_Commentary_Track12"
+msgid "LASTLY"
+msgstr ""
+
+#. 導演的話
+msgctxt "UI_MainMenu_Commentary"
+msgid "DIRECTOR'S COMMENTARY"
+msgstr ""
+
+#. 導演的話
+msgctxt "UI_Commentary_Title"
+msgid "DIRECTOR'S COMMENTARY"
+msgstr ""
+
+#. 看廣告換靈魂石
+msgctxt "UI_AdWall_WatchTitle"
+msgid "GET FREE SOUL STONES"
+msgstr ""
+
+#. 電視機偶爾會顯示來自靈魂的重要訊息，看了似乎靈魂們會贈予靈魂石感謝你
+msgctxt "UI_AdWall_Watch"
+msgid "This old TV seems to be getting a signal. What could it be?"
+msgstr ""
+
+#. 來看看
+msgctxt "UI_AdWall_WatchConfirm"
+msgid "WATCH AD"
+msgstr ""
+
+#. 等待時間：{0}
+msgctxt "UI_AdWall_WatchCoolDown"
+msgid "{0} LEFT"
+msgstr ""
+
+#. 感謝您的聆聽
+msgctxt "UI_Paywall_CommentaryTitle"
+msgid "THANKS FOR LISTENING"
+msgstr ""
+
+#. 如果想了解更多靈魂之橋背後的開發趣事，可以解鎖完整版導演的話，支持並鼓勵團隊以後分享更多開發祕辛！
+msgctxt "UI_Paywall_CommentaryMsg"
+msgid "If you'd like to know more about the development behind Rocket of Whispers, please feel free to unlock the full Director's Commentary. It supports future content on the development of the series!"
+msgstr ""
+
+#. 當然～幕後花絮怎麼能錯過！
+msgctxt "UI_Paywall_CommentaryConfirm"
+msgid "I want to hear more!"
+msgstr ""
+
+#. 嗯，讓我再考慮一下
+msgctxt "UI_Paywall_CommentaryDismiss"
+msgid "Maybe later."
+msgstr ""
+
+#. 請問您想要收到電視可以觀看的推播通知嗎？（通知可以隨時在遊戲選項中調整）
+msgctxt "UI_Notification_AdwallReminder"
+msgid "Would you like to get notified when the TV is ready? (You can change settings in the options menu)"
+msgstr ""
+
+#. 推播提醒：開啟中
+msgctxt "UI_Options_BtnAdwallRemindOpen"
+msgid "PUSH NOTIFICATIONS: ON"
+msgstr ""
+
+#. 推播提醒：關閉中
+msgctxt "UI_Options_BtnAdwallRemindClose"
+msgid "PUSH NOTIFICATIONS: OFF"
+msgstr ""
+
+#. OPUS-靈魂之橋
+msgctxt "S_GameTitle"
+msgid "OPUS: ROCKET OF WHISPERS"
+msgstr ""
+
+#. 工廠的電視好像又有訊號了，快來看看！
+msgctxt "System_Notification_Adwall"
+msgid "The TV received another signal. Come have a look!"
+msgstr ""
+
+#. [T] 導演的話
+msgctxt "UI_HUDMenu_PCBtnCommentary"
+msgid "[T] DIRECTOR'S COMMENTARY"
+msgstr ""
+
+#. 小心劇透！
+msgctxt "UI_Notification_CommentaryWarningTitle"
+msgid "SPOILER ALERT"
+msgstr ""
+
+#. 「導演的話」會提到遊戲後半段的劇情內容。如果不想被劇透的話，建議先把劇情玩完喔！
+msgctxt "UI_Notification_CommentaryWarningContent"
+msgid "The Director's Commentary talks about content from later in the game. If you want to avoid spoilers, we recommend you finish the game first!"
+msgstr ""
+
+#. 了解了！
+msgctxt "UI_Notification_CommentaryBtnConfirm"
+msgid "I UNDERSTAND!"
+msgstr ""
+
+#. 限時優惠
+msgctxt "UI_Paywall_LabelTimer"
+msgid "LIMITED TIME OFFER"
+msgstr ""
+
+#. 限時優惠要結束了喔，請問要以優惠價購買組合包嗎？
+msgctxt "UI_Notification_LimitedOfferEnd"
+msgid "Last chance to get our limited time bundle discount! Would you like to grab a copy?"
+msgstr ""
+
+#. 當然要買
+msgctxt "UI_Notification_LimitedOfferEndConfirm"
+msgid "I NEED THIS"
+msgstr ""
+
+#. 放棄優惠
+msgctxt "UI_Notification_LimitedOfferEndDismiss"
+msgid "NOPE"
+msgstr ""
+
+#. 微信登录
+msgctxt "UI_Shop_Login_Wechat"
+msgid "微信登录"
+msgstr ""
+
+#. 关注公众号领取奖励
+msgctxt "UI_Shop_Follow_Wechat"
+msgid "关注公众号领取奖励"
+msgstr ""
+
+#. 领取奖励
+msgctxt "UI_Shop_Following_Wechat"
+msgid "领取奖励"
+msgstr ""
+
+#. 已经领取
+msgctxt "UI_Shop_Followed_Wechat"
+msgid "已经领取"
+msgstr ""
+
+#. 請選擇遊戲
+msgctxt "UI_GameSelect_Select"
+msgid "PLEASE SELECT"
+msgstr ""
+
+#. 訂閱服務商城
+msgctxt "UI_Notification_NBOShop_Title"
+msgid "SUBSCRIPTION SERVICE"
+msgstr ""
+
+#. 在訂閱期間，商城品項皆可免費使用，消耗性品項，如靈魂石會保留目前使用狀態，非消耗性品項，如服裝等若退訂則恢復為訂閱前的使用狀態。若您有購買過遊戲商品，則退訂後會保留您原來購買的品項。
+msgctxt "UI_Notification_NBOShop_Message"
+msgid "Everything in the shop will be accessible while your subscription is active. However, non-consumable items that have not been purchased before will become inaccessible when your subscription expires. Consumable items, like soul stones, will remain and can be used freely."
+msgstr ""
+
+#. 請確認訂閱狀態
+msgctxt "UI_Notification_NBOPopup_Title"
+msgid "SUBSCRIPTION STATUS CHECK"
+msgstr ""
+
+#. 目前偵測不到是否仍在訂閱中，請確認裝置是否連線中或訂閱狀態是否過期，若放棄訂閱直到您恢復訂閱前無法繼續遊戲！
+msgctxt "UI_Notification_NBOPopup_Desc"
+msgid "It looks like your subscription has expired. Please check your network connection and make sure your subscription is active. An active subscription is required to continue playing!"
+msgstr ""
+
+#. 請確認訂閱狀態
+msgctxt "UI_Paywall_NBOPaywallPopup_Title"
+msgid "GRAB THE FULL GAME?"
+msgstr ""
+
+#. 請確認您目前的訂閱狀態，若您不續約的話，可以考慮解鎖完整版的OPUS靈魂之橋以接續目前的遊玩進度，謝謝。
+msgctxt "UI_Paywall_NBOPaywallPopup_Message"
+msgid "It looks like your subscription has expired. If you wish to end your subscription, please consider unlocking the full game to keep playing!"
+msgstr ""
+
+#. 請確認裝置連線
+msgctxt "UI_DisconnectPopup_Title"
+msgid "NETWORK CONNECTION ERROR"
+msgstr ""
+
+#. 若您有使用訂閱服務，請先確認裝置是否己連線。若不連線將無法恢復先前登入時的進度。
+msgctxt "UI_DisconnectPopup_Desc"
+msgid "Your subscription appears to be offline. Please check your network connection to continue where you left off."
+msgstr ""
+
+#. 免費
+msgctxt "UI_Shop_Free_Button"
+msgid "GET IT FOR FREE!"
+msgstr ""
+
+#. 工廠的回憶
+msgctxt "UI_Inventory_TitleHomeItem"
+msgid "OPUS Memory"
+msgstr ""
+
+#. 此帳號已被綁定，若要解除綁定請利用電子郵件聯繫我們 support@sigono.com
+msgctxt "UI_Notification_AlreadyLinked"
+msgid "Your are connected with an another account, please email us if you want to unbind and delete your account data at support@sigono.com"
+msgstr ""
