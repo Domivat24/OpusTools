@@ -28,66 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelSettings = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.panelAbout = new System.Windows.Forms.Panel();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.panelPatcher = new System.Windows.Forms.Panel();
+            this.btnPatcher = new System.Windows.Forms.Button();
+            this.panelTools = new System.Windows.Forms.Panel();
+            this.btnTools = new System.Windows.Forms.Button();
+            this.panelContent = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.panelHeader.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panelSettings.SuspendLayout();
+            this.panelAbout.SuspendLayout();
+            this.panelPatcher.SuspendLayout();
+            this.panelTools.SuspendLayout();
+            this.panelContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(794, 557);
+            resources.ApplyResources(this.trackBar1, "trackBar1");
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(145, 45);
-            this.trackBar1.TabIndex = 0;
             this.trackBar1.Value = 100;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // button1
+            // panelHeader
             // 
-            this.button1.Location = new System.Drawing.Point(438, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "import";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.panelHeader, "panelHeader");
+            this.panelHeader.Controls.Add(this.label1);
+            this.panelHeader.Name = "panelHeader";
             // 
-            // button2
+            // label1
             // 
-            this.button2.Location = new System.Drawing.Point(589, 263);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "export";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.panelSettings, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelAbout, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelPatcher, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelTools, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // panelSettings
+            // 
+            this.panelSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            this.panelSettings.Controls.Add(this.btnSettings);
+            resources.ApplyResources(this.panelSettings, "panelSettings");
+            this.panelSettings.Name = "panelSettings";
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            resources.ApplyResources(this.btnSettings, "btnSettings");
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.tab_Click);
+            // 
+            // panelAbout
+            // 
+            this.panelAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            this.panelAbout.Controls.Add(this.btnAbout);
+            resources.ApplyResources(this.panelAbout, "panelAbout");
+            this.panelAbout.Name = "panelAbout";
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            resources.ApplyResources(this.btnAbout, "btnAbout");
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnAbout.Click += new System.EventHandler(this.tab_Click);
+            // 
+            // panelPatcher
+            // 
+            this.panelPatcher.BackColor = System.Drawing.Color.Cyan;
+            this.panelPatcher.Controls.Add(this.btnPatcher);
+            resources.ApplyResources(this.panelPatcher, "panelPatcher");
+            this.panelPatcher.Name = "panelPatcher";
+            // 
+            // btnPatcher
+            // 
+            this.btnPatcher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            resources.ApplyResources(this.btnPatcher, "btnPatcher");
+            this.btnPatcher.FlatAppearance.BorderSize = 0;
+            this.btnPatcher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPatcher.Name = "btnPatcher";
+            this.btnPatcher.UseVisualStyleBackColor = false;
+            this.btnPatcher.Click += new System.EventHandler(this.tab_Click);
+            // 
+            // panelTools
+            // 
+            this.panelTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            this.panelTools.Controls.Add(this.btnTools);
+            resources.ApplyResources(this.panelTools, "panelTools");
+            this.panelTools.Name = "panelTools";
+            // 
+            // btnTools
+            // 
+            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
+            resources.ApplyResources(this.btnTools, "btnTools");
+            this.btnTools.FlatAppearance.BorderSize = 0;
+            this.btnTools.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTools.Name = "btnTools";
+            this.btnTools.UseVisualStyleBackColor = false;
+            this.btnTools.Click += new System.EventHandler(this.tab_Click);
+            // 
+            // panelContent
+            // 
+            this.panelContent.Controls.Add(this.trackBar1);
+            resources.ApplyResources(this.panelContent, "panelContent");
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(147)))));
-            this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.panelContent);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Opus";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panelSettings.ResumeLayout(false);
+            this.panelAbout.ResumeLayout(false);
+            this.panelPatcher.ResumeLayout(false);
+            this.panelTools.ResumeLayout(false);
+            this.panelContent.ResumeLayout(false);
+            this.panelContent.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private TrackBar trackBar1;
-        private Button button1;
-        private Button button2;
+        private Panel panelHeader;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panelTools;
+        private Button btnTools;
+        private Label label1;
+        private Panel panelSettings;
+        private Button btnSettings;
+        private Panel panelAbout;
+        private Button btnAbout;
+        private Panel panelPatcher;
+        private Button btnPatcher;
+        private Panel panelContent;
     }
 }

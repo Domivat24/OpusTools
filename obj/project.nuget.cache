@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iHGeWWYw2KX3WUYYLyY3o49ZiYKUORhkMAwCOHgBTas8H40AUJqvmwuizXRrOfyj84469ZOBiqv7uWe/zvAn/Q==",
+  "dgSpecHash": "IRduerbDonYN8l3iQUCUsFUjXZNiHtXEi4zjJ27RuVwHTAuBOB2IZal0vMUBfmSRoRL5O4TLrLdbF+QKOSyNAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ivanj\\source\\repos\\OpusTool\\OpusTool.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\ivanj\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ivanj\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ivanj\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\ivanj\\.nuget\\packages\\mono.cecil\\0.11.5\\mono.cecil.0.11.5.nupkg.sha512",
     "C:\\Users\\ivanj\\.nuget\\packages\\naudio\\2.1.0\\naudio.2.1.0.nupkg.sha512",
     "C:\\Users\\ivanj\\.nuget\\packages\\naudio.asio\\2.1.0\\naudio.asio.2.1.0.nupkg.sha512",
     "C:\\Users\\ivanj\\.nuget\\packages\\naudio.core\\2.1.0\\naudio.core.2.1.0.nupkg.sha512",
