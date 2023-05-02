@@ -26,7 +26,6 @@ namespace OpusTool
         public UC_Tools()
         {
             InitializeComponent();
-            modify_Dll_Export();
         }
 
         private void btnExport_Click(object sender, EventArgs e)
@@ -144,13 +143,13 @@ namespace OpusTool
             {
             }
         }
-        private void modify_Dll_Export()
+        private void modify_Dll_Export(string pathDll)
         {
-            string pathDll = Directory.GetCurrentDirectory() + "/Assembly-CSharp.dll";
+            //string pathDll = Directory.GetCurrentDirectory() + "/Assembly-CSharp.dll";
             //string pathDll = @"E:\Program Files x86\steamapps\common\OPUS Rocket of Whispers\OPUS Rocket of Whispers_Data\Managed\Assembly-CSharp.dll";
             var resolver = new DefaultAssemblyResolver();
-            resolver.AddSearchDirectory(@"E:\Program Files x86\steamapps\common\OPUS Rocket of Whispers\OPUS Rocket of Whispers_Data\Managed\");
-            using (var assembly = Mono.Cecil.AssemblyDefinition.ReadAssembly(pathDll, new ReaderParameters { ReadWrite = true, AssemblyResolver = resolver }))
+            resolver.AddSearchDirectory(pathDll);
+            using (var assembly = Mono.Cecil.AssemblyDefinition.ReadAssembly(pathDll+"/Assembly-Csharp.dll", new ReaderParameters { ReadWrite = true, AssemblyResolver = resolver }))
             {
                 Mono.Cecil.TypeDefinition manager_Class = assembly.MainModule.Types.FirstOrDefault(type => type.Name == "LocalizationManager");
                 Mono.Cecil.MethodDefinition cacheDatabase = manager_Class.Methods.FirstOrDefault(method => method.Name == "ResetCacheStringDataBase");
@@ -233,5 +232,12 @@ namespace OpusTool
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(folderBrowserDialog1.ShowDialog()== DialogResult.OK)
+            {
+                modify_Dll_Export(folderBrowserDialog1.SelectedPath);
+            }
+        }
     }
 }

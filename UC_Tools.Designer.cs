@@ -32,11 +32,13 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(267, 142);
+            this.btnImport.Location = new System.Drawing.Point(299, 88);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(129, 76);
             this.btnImport.TabIndex = 2;
@@ -62,11 +64,22 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(59, 101);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 76);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Modify Assembly";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UC_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OpusTool.Properties.Resources.art2;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnImport);
             this.DoubleBuffered = true;
@@ -83,5 +96,7 @@
         private Button btnExport;
         private OpenFileDialog openFileDialog1;
         private OpenFileDialog openFileDialog2;
+        private Button button1;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }
