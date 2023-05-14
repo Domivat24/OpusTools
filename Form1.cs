@@ -1,22 +1,33 @@
 using NAudio.Wave;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Text;
 using Yarhl.FileSystem;
 using Yarhl.Media.Text;
+using System.Resources;
+using System.Reflection;
+using System.Windows.Forms;
 
 namespace OpusTool
 {
     public partial class Form1 : Form
     {
-        private WaveOutEvent backgroundMusic;
+        public static WaveOutEvent backgroundMusic;
+        private UC_Settings uC_Settings;
+        public CultureManager<Form1> _cultureManager;
         public Form1()
         {
             InitializeComponent();
+            _cultureManager= new CultureManager<Form1>(this);
+            _cultureManager.updateCurrentControlCulture();
+
         }
 
-        [DllImport("kernel32.dll", SetLastError = true)]
+      
+
+    [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AllocConsole();
         private void Form1_Load(object sender, EventArgs e)
@@ -26,19 +37,12 @@ namespace OpusTool
             backgroundMusic.Init(new LoopStream(audioFile));
             backgroundMusic.Play();
             AllocConsole();
-            Console.WriteLine("CONSOLA");
-
-
-        }
-
-        private void trackBar1_Scroll(object sender, EventArgs e)
-        {
-            backgroundMusic.Volume = (float)trackBar1.Value / 100f;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             backgroundMusic.Dispose();
+
         }
 
         
@@ -71,7 +75,8 @@ namespace OpusTool
                     panelTools.BackColor = Color.Turquoise;
                     break;
                 case "btnSettings":
-                    add_UserControls(new UC_Settings());
+                    uC_Settings = new UC_Settings((Form1)this);
+                    add_UserControls(uC_Settings);
                     panelSettings.BackColor = Color.Turquoise;
                     break;
                 case "btnAbout":
@@ -87,6 +92,8 @@ namespace OpusTool
         {
 
         }
+
+        
 
     }
 }

@@ -15,6 +15,14 @@
         },
         "runtime": {
           "OpusTool.dll": {}
+        },
+        "resources": {
+          "en/OpusTool.resources.dll": {
+            "locale": "en"
+          },
+          "es/OpusTool.resources.dll": {
+            "locale": "es"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {},

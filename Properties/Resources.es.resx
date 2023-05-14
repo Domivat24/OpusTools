@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAbout" xml:space="preserve">
+    <value>Acerca de </value>
+  </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCheckUpdates" xml:space="preserve">
+    <value>Comprobar actualizaciones</value>
+  </data>
+  <data name="btnExportPo" xml:space="preserve">
+    <value>Exportar a archivo PO</value>
+  </data>
+  <data name="btnImportPo" xml:space="preserve">
+    <value>Importar el texto desde un archivo PO</value>
+  </data>
+  <data name="btnModifyDll" xml:space="preserve">
+    <value>Modificar archivos del juego</value>
+  </data>
+  <data name="btnPatcher" xml:space="preserve">
+    <value>Parcheador</value>
+  </data>
+  <data name="btnSettings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="btnTools" xml:space="preserve">
+    <value>Herramientas</value>
+  </data>
+  <data name="captionFileError" xml:space="preserve">
+    <value>Problema al seleccionar archivo</value>
+  </data>
+  <data name="captionFillError" xml:space="preserve">
+    <value>¡Problema de validación!</value>
+  </data>
+  <data name="captionNewVersion" xml:space="preserve">
+    <value>Actualización disponible</value>
+  </data>
+  <data name="generalError" xml:space="preserve">
+    <value>Se ha producido el siguiente error:</value>
+  </data>
+  <data name="generalErrorCaption" xml:space="preserve">
+    <value>¡Algo ha salido mal!</value>
+  </data>
+  <data name="labelCodeLanguage" xml:space="preserve">
+    <value>Introduce el código ISO del idioma al que desea traducir:</value>
+  </data>
+  <data name="labelCommentLanguage" xml:space="preserve">
+    <value>Selecciona el idioma que quieras añadir como comentario de cada cadena:</value>
+  </data>
+  <data name="labelEmail" xml:space="preserve">
+    <value>Email del proyecto (si requiriese)</value>
+  </data>
+  <data name="labelHeader" xml:space="preserve">
+    <value>Parcheador Opus: Rocket of Whispers</value>
+  </data>
+  <data name="labelLanguage" xml:space="preserve">
+    <value>Idioma de la interfaz</value>
+  </data>
+  <data name="labelNoComment" xml:space="preserve">
+    <value>No quiero ningún idioma como comentario</value>
+  </data>
+  <data name="labelOriginalLanguage" xml:space="preserve">
+    <value>Selecciona el idioma del que quieres traducir:</value>
+  </data>
+  <data name="labelPoLanguage" xml:space="preserve">
+    <value>Proporcione el idioma de traducción en código de lenguaje ISO</value>
+  </data>
+  <data name="labelProjectID" xml:space="preserve">
+    <value>Identificador del proyecto de traducción</value>
+  </data>
+  <data name="labelVolume" xml:space="preserve">
+    <value>Volumen de la música</value>
+  </data>
+  <data name="languageCHS" xml:space="preserve">
+    <value>Chino simplificado</value>
+  </data>
+  <data name="languageCHT" xml:space="preserve">
+    <value>Chino (Taiwanés)</value>
+  </data>
+  <data name="languageEn" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="languageEs" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="languageJP" xml:space="preserve">
+    <value>Japonés</value>
+  </data>
+  <data name="languageJPSWITCH" xml:space="preserve">
+    <value>Japonés (Switch)</value>
+  </data>
+  <data name="languageKR" xml:space="preserve">
+    <value>Coreano</value>
+  </data>
+  <data name="messageAborted" xml:space="preserve">
+    <value>Proceso abortado.</value>
+  </data>
+  <data name="messageErrorSelect" xml:space="preserve">
+    <value>No ha seleccionado el archivo con el foramto correcto o hay un problema con el archivo</value>
+  </data>
+  <data name="messageFileError" xml:space="preserve">
+    <value>El archivo seleccionado no tiene un formato válido</value>
+  </data>
+  <data name="messageFillError" xml:space="preserve">
+    <value>Rellena/selecciona todos los campos imprescindibles</value>
+  </data>
+  <data name="messageLanguageError" xml:space="preserve">
+    <value>El código de lenguaje no es válido. En la página que se abrirá a continuación se proporcionan ejemplos.</value>
+  </data>
+  <data name="messageNewVersion" xml:space="preserve">
+    <value>Hay una nueva versión disponible del programa. ¿Desea descargarla de internet y actualizar el programa?</value>
+  </data>
+  <data name="messageSelectJSON" xml:space="preserve">
+    <value>Selecciona el archivo json exportado del juego</value>
+  </data>
+  <data name="messageSelectPO" xml:space="preserve">
+    <value>Selecciona el archivo po con el texto traducido del juego</value>
+  </data>
+  <data name="savePoDialog" xml:space="preserve">
+    <value>Seleccione dónde y con que nombre desea generar el archivo PO.</value>
+  </data>
+</root>

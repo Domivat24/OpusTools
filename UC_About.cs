@@ -12,9 +12,11 @@ namespace OpusTool
 {
     public partial class UC_About : UserControl
     {
+        private CultureManager<UC_About> _cultureManager;
         public UC_About()
         {
             InitializeComponent();
+            _cultureManager = new CultureManager<UC_About>(this);
         }
     }
 }

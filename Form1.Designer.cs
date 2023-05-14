@@ -1,4 +1,7 @@
-﻿namespace OpusTool
+﻿using System.Globalization;
+using System.Resources;
+
+namespace OpusTool
 {
     partial class Form1
     {
@@ -29,9 +32,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelHeader = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelSettings = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -42,37 +44,27 @@
             this.panelTools = new System.Windows.Forms.Panel();
             this.btnTools = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelHeader.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelSettings.SuspendLayout();
             this.panelAbout.SuspendLayout();
             this.panelPatcher.SuspendLayout();
             this.panelTools.SuspendLayout();
-            this.panelContent.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // trackBar1
-            // 
-            resources.ApplyResources(this.trackBar1, "trackBar1");
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Value = 100;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // panelHeader
             // 
             resources.ApplyResources(this.panelHeader, "panelHeader");
-            this.panelHeader.Controls.Add(this.label1);
+            this.panelHeader.Controls.Add(this.labelHeader);
             this.panelHeader.Name = "panelHeader";
             // 
-            // label1
+            // labelHeader
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            resources.ApplyResources(this.labelHeader, "labelHeader");
+            this.labelHeader.BackColor = System.Drawing.Color.Transparent;
+            this.labelHeader.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelHeader.Name = "labelHeader";
+            this.labelHeader.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -153,7 +145,6 @@
             // 
             // panelContent
             // 
-            this.panelContent.Controls.Add(this.trackBar1);
             resources.ApplyResources(this.panelContent, "panelContent");
             this.panelContent.Name = "panelContent";
             this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
@@ -166,10 +157,10 @@
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panelHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -177,20 +168,16 @@
             this.panelAbout.ResumeLayout(false);
             this.panelPatcher.ResumeLayout(false);
             this.panelTools.ResumeLayout(false);
-            this.panelContent.ResumeLayout(false);
-            this.panelContent.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private TrackBar trackBar1;
         private Panel panelHeader;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panelTools;
         private Button btnTools;
-        private Label label1;
+        private Label labelHeader;
         private Panel panelSettings;
         private Button btnSettings;
         private Panel panelAbout;
