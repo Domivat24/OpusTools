@@ -17,18 +17,21 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '6.0.x'
-
-    - name: Build
-      run: dotnet build --configuration Release
-      
+    - name: Restore packets
+      run: dotnet restore
     - name: Get app version
       run: |
         version=$(cat version.txt)
         echo "VERSION=$version" >> $GITHUB_ENV
 
+    - name: Build
+      run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
+    - name: Publish app 
+      run: dotnet publish -r win-x64 --self-contained true --output publish
 
-    - name: Publish Release
-      id: publish_release
+      
+    - name: Create Release
+      id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
@@ -43,7 +46,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
       with:
-        upload_url: ${{ steps.publish_release.outputs.upload_url }}
-        asset_path: ./bin/Debug/net6.0-windows/OpusTool.exe
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./publish/OpusTool.exe
         asset_name: OpusTool.exe
         asset_content_type: application/octet-stream
