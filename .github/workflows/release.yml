@@ -22,8 +22,9 @@ jobs:
       run: dotnet build --configuration Release
       
     - name: Get app version
-      id: version
-      run: echo "::set-env name=VERSION::$(cat version.txt)"
+      run: |
+        version=$(cat version.txt)
+        echo "VERSION=$version" >> $GITHUB_ENV
 
 
     - name: Publish Release
@@ -31,7 +32,6 @@ jobs:
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
-        RELEASE_VERSION: ${{ env.VERSION }}
       with:
         tag_name: |
           v${{ env.VERSION }}
