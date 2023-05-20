@@ -1,4 +1,4 @@
-name: Publicar Release
+name: Publish app to Releases
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       id: publish_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
@@ -35,7 +35,7 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
       with:
         upload_url: ${{ steps.publish_release.outputs.upload_url }}
         asset_path: ./bin/Debug/net6.0-windows/OpusTool.exe
