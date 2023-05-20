@@ -23,20 +23,22 @@ jobs:
       
     - name: Get app version
       id: version
-      run: echo "::set-output name=version::$(cat version.txt)"
+      run: echo "::set-env name=VERSION::$(cat version.txt)"
+
 
     - name: Publish Release
       id: publish_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
+        RELEASE_VERSION: ${{ env.VERSION }}
       with:
         tag_name: |
-          v${{ steps.version.outputs.version }}
+          v${{ env.VERSION }}
           debug
-        release_name: Release v${{ steps.version.outputs.version }}
+        release_name: Release v${{ env.VERSION }}
         draft: false
-        prerelease: false
+        prerelease: true
 
     - name: Upload Artifacts
       uses: actions/upload-release-asset@v1
