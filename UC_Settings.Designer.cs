@@ -32,77 +32,91 @@ namespace OpusTool
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Settings));
-            this.volumeBar = new System.Windows.Forms.TrackBar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelLanguage = new System.Windows.Forms.Label();
-            this.languageBox = new System.Windows.Forms.ComboBox();
-            this.btnCheckUpdates = new System.Windows.Forms.Button();
-            this.labelVolume = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            volumeBar = new TrackBar();
+            panel1 = new Panel();
+            labelDirectory = new Label();
+            textBoxDirectory = new TextBox();
+            labelLanguage = new Label();
+            languageBox = new ComboBox();
+            btnCheckUpdates = new Button();
+            labelVolume = new Label();
+            ((System.ComponentModel.ISupportInitialize)volumeBar).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // volumeBar
             // 
-            resources.ApplyResources(this.volumeBar, "volumeBar");
-            this.volumeBar.LargeChange = 10;
-            this.volumeBar.Maximum = 100;
-            this.volumeBar.Name = "volumeBar";
-            this.volumeBar.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.volumeBar.Value = 100;
-            this.volumeBar.Scroll += new System.EventHandler(this.volumeBar_Scroll);
+            resources.ApplyResources(volumeBar, "volumeBar");
+            volumeBar.LargeChange = 10;
+            volumeBar.Maximum = 100;
+            volumeBar.Name = "volumeBar";
+            volumeBar.TickStyle = TickStyle.None;
+            volumeBar.Value = 100;
+            volumeBar.Scroll += volumeBar_Scroll;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.labelLanguage);
-            this.panel1.Controls.Add(this.languageBox);
-            this.panel1.Controls.Add(this.btnCheckUpdates);
-            this.panel1.Controls.Add(this.labelVolume);
-            this.panel1.Controls.Add(this.volumeBar);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(labelDirectory);
+            panel1.Controls.Add(textBoxDirectory);
+            panel1.Controls.Add(labelLanguage);
+            panel1.Controls.Add(languageBox);
+            panel1.Controls.Add(btnCheckUpdates);
+            panel1.Controls.Add(labelVolume);
+            panel1.Controls.Add(volumeBar);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
+            // 
+            // labelDirectory
+            // 
+            resources.ApplyResources(labelDirectory, "labelDirectory");
+            labelDirectory.ForeColor = SystemColors.ControlLightLight;
+            labelDirectory.Name = "labelDirectory";
+            // 
+            // textBoxDirectory
+            // 
+            resources.ApplyResources(textBoxDirectory, "textBoxDirectory");
+            textBoxDirectory.Name = "textBoxDirectory";
             // 
             // labelLanguage
             // 
-            resources.ApplyResources(this.labelLanguage, "labelLanguage");
-            this.labelLanguage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelLanguage.Name = "labelLanguage";
+            resources.ApplyResources(labelLanguage, "labelLanguage");
+            labelLanguage.ForeColor = SystemColors.ControlLightLight;
+            labelLanguage.Name = "labelLanguage";
             // 
             // languageBox
             // 
-            resources.ApplyResources(this.languageBox, "languageBox");
-            this.languageBox.FormattingEnabled = true;
-            this.languageBox.Name = "languageBox";
-            this.languageBox.SelectedIndexChanged += new System.EventHandler(this.languageBox_SelectedIndexChanged);
+            resources.ApplyResources(languageBox, "languageBox");
+            languageBox.FormattingEnabled = true;
+            languageBox.Name = "languageBox";
+            languageBox.SelectedIndexChanged += languageBox_SelectedIndexChanged;
             // 
             // btnCheckUpdates
             // 
-            this.btnCheckUpdates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.btnCheckUpdates, "btnCheckUpdates");
-            this.btnCheckUpdates.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnCheckUpdates.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCheckUpdates.Name = "btnCheckUpdates";
-            this.btnCheckUpdates.UseVisualStyleBackColor = false;
-            this.btnCheckUpdates.Click += new System.EventHandler(this.checkUpdates_Click);
+            btnCheckUpdates.BackColor = Color.FromArgb(128, 128, 255);
+            resources.ApplyResources(btnCheckUpdates, "btnCheckUpdates");
+            btnCheckUpdates.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 255, 255);
+            btnCheckUpdates.ForeColor = SystemColors.ButtonHighlight;
+            btnCheckUpdates.Name = "btnCheckUpdates";
+            btnCheckUpdates.UseVisualStyleBackColor = false;
+            btnCheckUpdates.Click += checkUpdates_Click;
             // 
             // labelVolume
             // 
-            resources.ApplyResources(this.labelVolume, "labelVolume");
-            this.labelVolume.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelVolume.Name = "labelVolume";
+            resources.ApplyResources(labelVolume, "labelVolume");
+            labelVolume.ForeColor = SystemColors.ControlLightLight;
+            labelVolume.Name = "labelVolume";
             // 
             // UC_Settings
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
-            this.Name = "UC_Settings";
-            ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            DoubleBuffered = true;
+            Name = "UC_Settings";
+            ((System.ComponentModel.ISupportInitialize)volumeBar).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -113,5 +127,7 @@ namespace OpusTool
         private Label labelVolume;
         private ComboBox languageBox;
         private Label labelLanguage;
+        private Label labelDirectory;
+        private TextBox textBoxDirectory;
     }
 }

@@ -168,6 +168,9 @@
   <data name="labelCommentLanguage" xml:space="preserve">
     <value>Selecciona el idioma que quieras añadir como comentario de cada cadena:</value>
   </data>
+  <data name="labelDirectory" xml:space="preserve">
+    <value>Ruta del juego</value>
+  </data>
   <data name="labelEmail" xml:space="preserve">
     <value>Email del proyecto (si requiriese)</value>
   </data>

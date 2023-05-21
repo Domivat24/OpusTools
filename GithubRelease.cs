@@ -1,29 +1,34 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace OpusTool
 {
     public class GitHubRelease
     {
-        [JsonPropertyName("tag_name")]
+        [JsonProperty("tag_name")]
         public string TagName { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("prerelease")]
+        [JsonProperty("prerelease")]
         public bool IsPrerelease { get; set; }
 
-        [JsonPropertyName("assets")]
+        [JsonProperty("assets")]
         public List<GitHubReleaseAsset> Assets { get; set; }
+        public int getVersion()
+        {
+            return Int32.Parse(TagName.Substring(1, TagName.Length));
+    }
     }
 
     public class GitHubReleaseAsset
     {
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("browser_download_url")]
+        [JsonProperty("browser_download_url")]
         public string BrowserDownloadUrl { get; set; }
     }
+    
 
 }
