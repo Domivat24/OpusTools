@@ -21,8 +21,8 @@ jobs:
       run: dotnet restore
     - name: Get app version
       run: |
-        $csprojPath = "OpusTool.csproj"
-        $assemblyVersion = [xml](Get-Content $csprojPath).Project.PropertyGroup.AssemblyVersion
+        csprojPath = "OpusTool.csproj"
+        assemblyVersion=$(awk -F '[<>]' '/AssemblyVersion/{print $3}' "$csprojPath")
         echo "VERSION=v$assemblyVersion" >> $GITHUB_ENV
 
     - name: Build
