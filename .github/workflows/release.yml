@@ -21,9 +21,8 @@ jobs:
       run: dotnet restore
     - name: Get app version
       run: |
-        assemblyPath="./publish/OpusTool.dll"
-        assemblyVersion=$(dotnet --list-runtimes | awk '/Microsoft.NETCore.App/ {print $2}')
-        echo "VERSION=v$assemblyVersion" >> $GITHUB_ENV
+        version=$(cat version.txt)
+        echo "VERSION=$version" >> $GITHUB_ENV
 
     - name: Build
       run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
