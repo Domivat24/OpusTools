@@ -21,8 +21,9 @@ jobs:
       run: dotnet restore
     - name: Get app version
       run: |
-        version=$(xmlstarlet sel -t -v "/Project/PropertyGroup/AssemblyVersion" OpusTool.csproj)
-        echo "VERSION=v$version" >> $GITHUB_ENV
+        $csprojPath = "OpusTool.csproj"
+        $assemblyVersion = [xml](Get-Content $csprojPath).Project.PropertyGroup.AssemblyVersion
+        echo "VERSION=v$assemblyVersion" >> $GITHUB_ENV
 
     - name: Build
       run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
