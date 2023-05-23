@@ -121,6 +121,9 @@
   <data name="volumeBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
+  <data name="volumeBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="volumeBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 467</value>
@@ -144,159 +147,6 @@
   <data name="&gt;&gt;volumeBar.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="labelDirectory.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelDirectory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="labelDirectory.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Noto Sans Lisu, 11.25pt</value>
-  </data>
-  <data name="labelDirectory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 311</value>
-  </data>
-  <data name="labelDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
-  </data>
-  <data name="labelDirectory.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelDirectory.Text" xml:space="preserve">
-    <value>Ruta</value>
-  </data>
-  <data name="&gt;&gt;labelDirectory.Name" xml:space="preserve">
-    <value>labelDirectory</value>
-  </data>
-  <data name="&gt;&gt;labelDirectory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelDirectory.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelDirectory.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxDirectory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="textBoxDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 331</value>
-  </data>
-  <data name="textBoxDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 23</value>
-  </data>
-  <data name="textBoxDirectory.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBoxDirectory.Name" xml:space="preserve">
-    <value>textBoxDirectory</value>
-  </data>
-  <data name="&gt;&gt;textBoxDirectory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxDirectory.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textBoxDirectory.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelLanguage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelLanguage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="labelLanguage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Noto Sans Lisu, 11.25pt</value>
-  </data>
-  <data name="labelLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 354</value>
-  </data>
-  <data name="labelLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
-  </data>
-  <data name="labelLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelLanguage.Text" xml:space="preserve">
-    <value>Música de fondo:</value>
-  </data>
-  <data name="&gt;&gt;labelLanguage.Name" xml:space="preserve">
-    <value>labelLanguage</value>
-  </data>
-  <data name="&gt;&gt;labelLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLanguage.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelLanguage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="languageBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 374</value>
-  </data>
-  <data name="languageBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 23</value>
-  </data>
-  <data name="languageBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;languageBox.Name" xml:space="preserve">
-    <value>languageBox</value>
-  </data>
-  <data name="&gt;&gt;languageBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languageBox.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnCheckUpdates.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="btnCheckUpdates.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btnCheckUpdates.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Noto Sans Lisu, 11.25pt</value>
-  </data>
-  <data name="btnCheckUpdates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 397</value>
-  </data>
-  <data name="btnCheckUpdates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 50</value>
-  </data>
-  <data name="btnCheckUpdates.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnCheckUpdates.Text" xml:space="preserve">
-    <value>Comprobar actualizaciones</value>
-  </data>
-  <data name="&gt;&gt;btnCheckUpdates.Name" xml:space="preserve">
-    <value>btnCheckUpdates</value>
-  </data>
-  <data name="&gt;&gt;btnCheckUpdates.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCheckUpdates.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnCheckUpdates.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="labelVolume.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -305,6 +155,9 @@
   </data>
   <data name="labelVolume.Font" type="System.Drawing.Font, System.Drawing">
     <value>Noto Sans Lisu, 11.25pt</value>
+  </data>
+  <data name="labelVolume.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelVolume.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 447</value>
@@ -329,6 +182,162 @@
   </data>
   <data name="&gt;&gt;labelVolume.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="btnCheckUpdates.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnCheckUpdates.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnCheckUpdates.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Noto Sans Lisu, 11.25pt</value>
+  </data>
+  <data name="btnCheckUpdates.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCheckUpdates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnCheckUpdates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 50</value>
+  </data>
+  <data name="btnCheckUpdates.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnCheckUpdates.Text" xml:space="preserve">
+    <value>Comprobar actualizaciones</value>
+  </data>
+  <data name="&gt;&gt;btnCheckUpdates.Name" xml:space="preserve">
+    <value>btnCheckUpdates</value>
+  </data>
+  <data name="&gt;&gt;btnCheckUpdates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCheckUpdates.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnCheckUpdates.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLanguage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="labelLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Noto Sans Lisu, 11.25pt</value>
+  </data>
+  <data name="labelLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="labelLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="labelLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelLanguage.Text" xml:space="preserve">
+    <value>Música de fondo:</value>
+  </data>
+  <data name="&gt;&gt;labelLanguage.Name" xml:space="preserve">
+    <value>labelLanguage</value>
+  </data>
+  <data name="&gt;&gt;labelLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLanguage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelLanguage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxDirectory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="textBoxDirectory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 113</value>
+  </data>
+  <data name="textBoxDirectory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 23</value>
+  </data>
+  <data name="textBoxDirectory.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectory.Name" xml:space="preserve">
+    <value>textBoxDirectory</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectory.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelDirectory.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDirectory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="labelDirectory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Noto Sans Lisu, 11.25pt</value>
+  </data>
+  <data name="labelDirectory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDirectory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 93</value>
+  </data>
+  <data name="labelDirectory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="labelDirectory.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelDirectory.Text" xml:space="preserve">
+    <value>Ruta</value>
+  </data>
+  <data name="&gt;&gt;labelDirectory.Name" xml:space="preserve">
+    <value>labelDirectory</value>
+  </data>
+  <data name="&gt;&gt;labelDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDirectory.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelDirectory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="languageBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="languageBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 23</value>
+  </data>
+  <data name="languageBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;languageBox.Name" xml:space="preserve">
+    <value>languageBox</value>
+  </data>
+  <data name="&gt;&gt;languageBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>

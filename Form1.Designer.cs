@@ -54,8 +54,9 @@ namespace OpusTool
             // 
             // panelHeader
             // 
-            resources.ApplyResources(panelHeader, "panelHeader");
+            panelHeader.BackgroundImage = Properties.Resources.art1;
             panelHeader.Controls.Add(labelHeader);
+            resources.ApplyResources(panelHeader, "panelHeader");
             panelHeader.Name = "panelHeader";
             // 
             // labelHeader

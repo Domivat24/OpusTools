@@ -153,8 +153,26 @@
   <data name="captionFillError" xml:space="preserve">
     <value>¡Problema de validación!</value>
   </data>
+  <data name="captionGameNotFound" xml:space="preserve">
+    <value>Juego no encontrado</value>
+  </data>
+  <data name="captionGamePathMissing" xml:space="preserve">
+    <value>Directorio de instalación no encontrado</value>
+  </data>
   <data name="captionNewVersion" xml:space="preserve">
     <value>Actualización disponible</value>
+  </data>
+  <data name="captionNoInternet" xml:space="preserve">
+    <value>Sin Internet</value>
+  </data>
+  <data name="captionNoVersion" xml:space="preserve">
+    <value>¡Versión al día!</value>
+  </data>
+  <data name="gameNotFound" xml:space="preserve">
+    <value>No se han encontrado los archivos del juego. Asegúrate de introducir la ruta correcta en los ajustes.</value>
+  </data>
+  <data name="gamePathMissing" xml:space="preserve">
+    <value>No se ha encontrado el directorio del juego en su equipo. Vaya a la pestaña de ajustes para proporcionar su ruta.</value>
   </data>
   <data name="generalError" xml:space="preserve">
     <value>Se ha producido el siguiente error:</value>
@@ -234,6 +252,12 @@
   <data name="messageNewVersion" xml:space="preserve">
     <value>Hay una nueva versión disponible del programa. ¿Desea descargarla de internet y actualizar el programa?</value>
   </data>
+  <data name="messageNoInternet" xml:space="preserve">
+    <value>No hay acceso a Internet. Para experimentar la applicación al completo es necesario disponer de conexión activa.</value>
+  </data>
+  <data name="messageNoVersion" xml:space="preserve">
+    <value>No hay una nueva versión disponible de la aplicación.</value>
+  </data>
   <data name="messageSelectJSON" xml:space="preserve">
     <value>Selecciona el archivo json exportado del juego</value>
   </data>
@@ -242,5 +266,11 @@
   </data>
   <data name="savePoDialog" xml:space="preserve">
     <value>Seleccione dónde y con que nombre desea generar el archivo PO.</value>
+  </data>
+  <data name="toolTipDragDrop" xml:space="preserve">
+    <value>Debes seleccionar la carpeta madre del juego, donde se encuentra el ejecutable y el subdirectorio OPUS Rocket of Whispers_Data</value>
+  </data>
+  <data name="toolTipEnter" xml:space="preserve">
+    <value>Arrastra y suelta el directorio del juego o clica en el recuadro para buscarlo en el sistema.</value>
   </data>
 </root>

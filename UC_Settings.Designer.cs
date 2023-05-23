@@ -33,13 +33,13 @@ namespace OpusTool
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Settings));
             volumeBar = new TrackBar();
-            panel1 = new Panel();
-            labelDirectory = new Label();
-            textBoxDirectory = new TextBox();
-            labelLanguage = new Label();
-            languageBox = new ComboBox();
-            btnCheckUpdates = new Button();
             labelVolume = new Label();
+            btnCheckUpdates = new Button();
+            labelLanguage = new Label();
+            panel1 = new Panel();
+            textBoxDirectory = new TextBox();
+            labelDirectory = new Label();
+            languageBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)volumeBar).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -54,41 +54,11 @@ namespace OpusTool
             volumeBar.Value = 100;
             volumeBar.Scroll += volumeBar_Scroll;
             // 
-            // panel1
+            // labelVolume
             // 
-            panel1.Controls.Add(labelDirectory);
-            panel1.Controls.Add(textBoxDirectory);
-            panel1.Controls.Add(labelLanguage);
-            panel1.Controls.Add(languageBox);
-            panel1.Controls.Add(btnCheckUpdates);
-            panel1.Controls.Add(labelVolume);
-            panel1.Controls.Add(volumeBar);
-            resources.ApplyResources(panel1, "panel1");
-            panel1.Name = "panel1";
-            // 
-            // labelDirectory
-            // 
-            resources.ApplyResources(labelDirectory, "labelDirectory");
-            labelDirectory.ForeColor = SystemColors.ControlLightLight;
-            labelDirectory.Name = "labelDirectory";
-            // 
-            // textBoxDirectory
-            // 
-            resources.ApplyResources(textBoxDirectory, "textBoxDirectory");
-            textBoxDirectory.Name = "textBoxDirectory";
-            // 
-            // labelLanguage
-            // 
-            resources.ApplyResources(labelLanguage, "labelLanguage");
-            labelLanguage.ForeColor = SystemColors.ControlLightLight;
-            labelLanguage.Name = "labelLanguage";
-            // 
-            // languageBox
-            // 
-            resources.ApplyResources(languageBox, "languageBox");
-            languageBox.FormattingEnabled = true;
-            languageBox.Name = "languageBox";
-            languageBox.SelectedIndexChanged += languageBox_SelectedIndexChanged;
+            resources.ApplyResources(labelVolume, "labelVolume");
+            labelVolume.ForeColor = SystemColors.ControlLightLight;
+            labelVolume.Name = "labelVolume";
             // 
             // btnCheckUpdates
             // 
@@ -100,11 +70,50 @@ namespace OpusTool
             btnCheckUpdates.UseVisualStyleBackColor = false;
             btnCheckUpdates.Click += checkUpdates_Click;
             // 
-            // labelVolume
+            // labelLanguage
             // 
-            resources.ApplyResources(labelVolume, "labelVolume");
-            labelVolume.ForeColor = SystemColors.ControlLightLight;
-            labelVolume.Name = "labelVolume";
+            resources.ApplyResources(labelLanguage, "labelLanguage");
+            labelLanguage.ForeColor = SystemColors.ControlLightLight;
+            labelLanguage.Name = "labelLanguage";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(textBoxDirectory);
+            panel1.Controls.Add(labelDirectory);
+            panel1.Controls.Add(languageBox);
+            panel1.Controls.Add(labelLanguage);
+            panel1.Controls.Add(btnCheckUpdates);
+            panel1.Controls.Add(labelVolume);
+            panel1.Controls.Add(volumeBar);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
+            // 
+            // textBoxDirectory
+            // 
+            textBoxDirectory.AllowDrop = true;
+            textBoxDirectory.Cursor = Cursors.Cross;
+            resources.ApplyResources(textBoxDirectory, "textBoxDirectory");
+            textBoxDirectory.Name = "textBoxDirectory";
+            textBoxDirectory.ReadOnly = true;
+            textBoxDirectory.MouseClick += textBoxDirectory_MouseClick;
+            textBoxDirectory.TextChanged += textBoxDirectory_TextChanged;
+            textBoxDirectory.DragEnter += textBoxDirectory_DragEnter;
+            textBoxDirectory.DragLeave += textBoxDirectory_DragLeave;
+            textBoxDirectory.MouseEnter += textBoxDirectory_MouseEnter;
+            textBoxDirectory.MouseLeave += textBoxDirectory_MouseLeave;
+            // 
+            // labelDirectory
+            // 
+            resources.ApplyResources(labelDirectory, "labelDirectory");
+            labelDirectory.ForeColor = SystemColors.ControlLightLight;
+            labelDirectory.Name = "labelDirectory";
+            // 
+            // languageBox
+            // 
+            resources.ApplyResources(languageBox, "languageBox");
+            languageBox.FormattingEnabled = true;
+            languageBox.Name = "languageBox";
+            languageBox.SelectedIndexChanged += languageBox_SelectedIndexChanged;
             // 
             // UC_Settings
             // 
@@ -122,12 +131,12 @@ namespace OpusTool
         #endregion
 
         private TrackBar volumeBar;
-        private Panel panel1;
-        private Button btnCheckUpdates;
         private Label labelVolume;
-        private ComboBox languageBox;
+        private Button btnCheckUpdates;
         private Label labelLanguage;
-        private Label labelDirectory;
+        private Panel panel1;
         private TextBox textBoxDirectory;
+        private Label labelDirectory;
+        private ComboBox languageBox;
     }
 }

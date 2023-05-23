@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using Mono.Cecil.Cil;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Globalization;
 using System.IO.Compression;
 using System.Linq;
@@ -26,6 +28,8 @@ namespace OpusTool
         public Form1 ParentForm { get; set; }
         private CultureManager<UC_Settings> _cultureManager;
         private ResourceManager rm;
+        private ToolTip toolTipEnter = new ToolTip();
+        private ToolTip toolTipDragDrop = new ToolTip();
 
         public UC_Settings(Form1 parent)
         {
@@ -36,7 +40,9 @@ namespace OpusTool
             rm = _cultureManager.rm;
             languageBox.Items.Add(rm.GetString("languageEn"));
             languageBox.Items.Add(rm.GetString("languageEs"));
-            var p = Properties.Settings.Default.CultureInfo == "en" ? languageBox.SelectedIndex = 0 : languageBox.SelectedIndex = 1;
+            languageBox.SelectedIndex = Properties.Settings.Default.CultureInfo == "en" ? 0 : 1;
+            textBoxDirectory.Text = Properties.Settings.Default.GamePath;
+
 
         }
         public async void checkUpdate()
@@ -99,34 +105,37 @@ namespace OpusTool
                                             // Exit the current application
                                             currentProcess.CloseMainWindow();
                                             currentProcess.Close();
+                                            File.Delete(Assembly.GetEntryAssembly().Location);
                                             Environment.Exit(0);
                                         }
                                     }
                                 }
-                                else
-                                {
-                                    // Display an error message if the new release package does not contain an executable file
-                                    MessageBox.Show("Failed to find an executable file in the new release package.", "Update Error");
-                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show(rm.GetString("messageNoVersion"), rm.GetString("captionNoVersion"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
-
                         else
                         {
-                            MessageBox.Show("No hay actualizaciones disponibles", "Versión al día", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Display an error message if the new release package does not contain an executable file
+                            MessageBox.Show("Failed to find an executable file in the new release package.", rm.GetString("generalErrorCaption"));
                         }
+
+
                     }
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(String.Format("Se ha producido el siguiente error al intentar actualizar la aplicación {0}", ex.ToString()), "Error al descargar la actualización .", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(String.Format("{0} {1}", rm.GetString("generalError"), ex.ToString()), rm.GetString("generalErrorCaption"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
             }
             else
             {
-                MessageBox.Show("No hay conexión a Internet. Para comprobar si hay nuevas actualizaciones debes tener acceso a la red.", "Error al buscar actualizaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(rm.GetString("messageNoInternet"), rm.GetString("captionNoInternet"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -177,6 +186,73 @@ namespace OpusTool
                 previousSelectedItem = selectedValue;
             }
 
+        }
+
+        private void textBoxDirectory_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.GamePath = textBoxDirectory.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void textBoxDirectory_DragEnter(object sender, DragEventArgs e)
+        {
+            var textBox = (TextBox)sender;
+            var effects = DragDropEffects.None;
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                var path = ((string[])e.Data.GetData(DataFormats.FileDrop))[0];
+                if (Directory.Exists(path) && Directory.Exists(Path.Combine(path, "OPUS Rocket of Whispers_data")))
+                {
+                    effects = DragDropEffects.Copy;
+                }
+            }
+            e.Effect = effects;
+            if (e.Effect == DragDropEffects.None)
+            {
+                toolTipDragDrop.Active = true;
+                toolTipDragDrop.Show(rm.GetString("toolTipDragDrop"), textBox, 0, -20);
+            }
+        }
+
+        private void textBoxDirectory_MouseEnter(object sender, EventArgs e)
+        {
+            var textBox = (TextBox)sender;
+            toolTipEnter.Active = true;
+            if (string.IsNullOrEmpty(toolTipEnter.GetToolTip(textBox)))
+            {
+                toolTipEnter.Show(rm.GetString("toolTipEnter"), textBox, 0, -20);
+            }
+
+
+        }
+
+        private void textBoxDirectory_MouseLeave(object sender, EventArgs e)
+        {
+            toolTipEnter.Active = false;
+        }
+
+        private void textBoxDirectory_DragLeave(object sender, EventArgs e)
+        {
+            toolTipDragDrop.Active = false;
+        }
+
+        private void textBoxDirectory_MouseClick(object sender, MouseEventArgs e)
+        {
+            FolderBrowserDialog folderDialog = new FolderBrowserDialog();
+            Console.WriteLine(string.IsNullOrEmpty(Properties.Settings.Default.GamePath));
+            folderDialog.InitialDirectory = string.IsNullOrEmpty(Properties.Settings.Default.GamePath) ? Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) : Properties.Settings.Default.GamePath;
+            folderDialog.UseDescriptionForTitle = true;
+            folderDialog.Description = rm.GetString("toolTipDragDrop");
+            if (folderDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (Directory.Exists(Path.Combine(folderDialog.SelectedPath, "OPUS Rocket Of Whispers_Data")))
+                {
+                    textBoxDirectory.Text = folderDialog.SelectedPath;
+                    return;
+                }
+                MessageBox.Show(rm.GetString("gameNotFound"), rm.GetString("captionGameNotFound"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }

@@ -73,23 +73,11 @@ namespace OpusTool
                 translation.Add(entry.Context, poText);
             }
 
-            string filePathJson = Path.GetDirectoryName(filepath)+"/database.json";
-            JArray existingArray;
-
-            using (StreamReader reader = new StreamReader(filePathJson))
-            {
-                // Read the existing array from the file
-                existingArray = JArray.Parse(reader.ReadToEnd());
-
-                // Add the new object to the array
-                existingArray.Add(translation);
-
-
-            }
-            // Write the updated array back to the file
+            string filePathJson = Path.Combine(Properties.Settings.Default.GamePath,"translation.json");
+           
             using (StreamWriter writer = new StreamWriter(filePathJson))
             {
-                writer.Write(existingArray.ToString());
+                writer.Write(translation.ToString());
             }
         }
         public void exportPo(string filePath)
@@ -348,7 +336,15 @@ namespace OpusTool
             openFileDialog2.Filter = "PO|*.po|All Files|*.*";
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
             {
-                importPo(openFileDialog2.FileName);
+
+                try {
+                    importPo(openFileDialog2.FileName);
+                    MessageBox.Show("Archivo importado correctamente");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(String.Format(format: "{0} {1}", rm.GetString("generalError"), ex.ToString()), rm.GetString("generalErrorCaption"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }

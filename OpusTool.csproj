@@ -17,15 +17,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\backgroundMusic.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Gameloop.Vdf" Version="0.6.2" />
     <PackageReference Include="Mono.Cecil" Version="0.11.5" />
     <PackageReference Include="NAudio" Version="2.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Yarhl.Media.Text" Version="4.0.0-preview.185" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Resources\backgroundMusic.mp3" />
   </ItemGroup>
 
   <ItemGroup>
