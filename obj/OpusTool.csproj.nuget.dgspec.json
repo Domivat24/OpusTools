@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj": {
-      "version": "0.5.2",
+      "version": "0.5.4-product-version",
       "restore": {
         "projectUniqueName": "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj",
         "projectName": "OpusTool",
@@ -74,6 +74,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -83,6 +97,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

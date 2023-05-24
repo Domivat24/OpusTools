@@ -1,0 +1,3 @@
+C:\Users\ivanj\OneDrive\Documentos\GitHub\OpusTools\publish\OpusTool.pdb
+C:\Users\ivanj\OneDrive\Documentos\GitHub\OpusTools\publish\OpusTool.dll.config
+C:\Users\ivanj\OneDrive\Documentos\GitHub\OpusTools\publish\OpusTool.exe
