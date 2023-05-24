@@ -28,7 +28,7 @@ jobs:
       run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
       
     - name: Publish app 
-      run: dotnet publish OpusTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} /p:Version=${{ env.VERSION }}-product-version /p:ApplicationIcon=Resources\logo.ico
+      run: dotnet publish OpusTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} /p:Version=${{ env.VERSION }}-product-version /p:ApplicationIcon=Resources/logo.ico
       
     - name: Create Release
       id: create_release
