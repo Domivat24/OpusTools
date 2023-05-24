@@ -36,7 +36,7 @@ jobs:
 
       - name: Rename executable
         run: |
-          $newName = "OpusTool_${{ env.VERSION }}.exe"
+          $newName = "OpusTool_v${{ env.VERSION }}.exe"
           Rename-Item -Path ./publish/OpusTool.exe -NewName $newName
 
       - name: Zip executable
