@@ -32,7 +32,7 @@ jobs:
         run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
 
       - name: Publish app 
-        run: dotnet publish OpustTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} 
+        run: dotnet publish OpusTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} 
 
       - name: Zip executable
         run: Compress-Archive -Path ./publish/OpusTool.exe -DestinationPath ./publish/OpusTool.zip
