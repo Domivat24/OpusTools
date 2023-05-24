@@ -85,18 +85,21 @@ namespace OpusTool
                                         if (downloadResponse.IsSuccessStatusCode)
                                         {
                                             var fileName = Path.GetFileName(downloadUrl);
-                                            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OpusTool_" + latestRelease.TagName + ".exe");
+                                            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
 
                                             using (var fileStream = File.Create(filePath))
                                             {
                                                 var downloadStream = await downloadResponse.Content.ReadAsStreamAsync();
                                                 await downloadStream.CopyToAsync(fileStream);
                                             }
+                                            //extract the zip file
+                                            ZipFile.ExtractToDirectory(filePath, AppDomain.CurrentDomain.BaseDirectory);
+                                            var extractedPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OpusTool_" + latestRelease.TagName + ".exe");
 
                                             var currentProcess = Process.GetCurrentProcess();
                                             var startInfo = new ProcessStartInfo
                                             {
-                                                FileName = filePath,
+                                                FileName = extractedPath,
                                                 UseShellExecute = true,
                                                 WorkingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)
                                             };
@@ -105,6 +108,7 @@ namespace OpusTool
                                             // Exit the current application
                                             currentProcess.CloseMainWindow();
                                             currentProcess.Close();
+                                            File.Delete(filePath);
                                             File.Delete(Assembly.GetEntryAssembly().Location);
                                             Environment.Exit(0);
                                         }

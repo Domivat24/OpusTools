@@ -59,7 +59,7 @@ namespace OpusTool
                     MessageBox.Show(rm.GetString("gamePathMissing"), rm.GetString("captionGamePathMissing"), MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
             }
-
+            add_UserControls(new UC_Patcher());
         }
 
         static string GetSteamGamePath()

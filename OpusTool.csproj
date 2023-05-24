@@ -9,7 +9,7 @@
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Version>0.5.2.0</Version>
 	<AssemblyVersion>0.5.2.0</AssemblyVersion>
-	<ApplicationIcon>resources\logo.ico</ApplicationIcon>
+	<ApplicationIcon>Resources\logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

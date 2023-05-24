@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivanj\\source\\repos\\OpusTool\\OpusTool.csproj": {}
+    "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivanj\\source\\repos\\OpusTool\\OpusTool.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj": {
+      "version": "0.5.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivanj\\source\\repos\\OpusTool\\OpusTool.csproj",
+        "projectUniqueName": "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj",
         "projectName": "OpusTool",
-        "projectPath": "C:\\Users\\ivanj\\source\\repos\\OpusTool\\OpusTool.csproj",
+        "projectPath": "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\OpusTool.csproj",
         "packagesPath": "C:\\Users\\ivanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivanj\\source\\repos\\OpusTool\\obj\\",
+        "outputPath": "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ivanj\\source\\repos\\OpusTool\\NuGet.Config",
+          "C:\\Users\\ivanj\\OneDrive\\Documentos\\GitHub\\OpusTools\\NuGet.Config",
           "C:\\Users\\ivanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,6 +42,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Gameloop.Vdf": {
+              "target": "Package",
+              "version": "[0.6.2, )"
+            },
             "Mono.Cecil": {
               "target": "Package",
               "version": "[0.11.5, )"
@@ -78,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

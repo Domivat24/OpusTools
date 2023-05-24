@@ -32,10 +32,10 @@ jobs:
         run: dotnet build --configuration Release /p:AssemblyVersion=${{ env.VERSION }}
 
       - name: Publish app 
-        run: dotnet publish OpusTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} 
+        run: dotnet publish OpusTool.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --output publish /p:AssemblyVersion=${{ env.VERSION }} /p:Version=${{ env.VERSION }}-product-version /p:OutputFile=./publish/OpusTool_${{ env.VERSION }}.exe
 
       - name: Zip executable
-        run: Compress-Archive -Path ./publish/OpusTool.exe -DestinationPath ./publish/OpusTool.zip
+        run: Compress-Archive -Path ./publish/OpusTool_${{ env.VERSION }}.exe -DestinationPath ./publish/OpusTool.zip
 
       - name: Create Release
         id: create_release
