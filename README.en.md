@@ -3,7 +3,7 @@
 
 | Spanish Readme | Latest Release |
 |-------|----------
-|[![es](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Domivat24/OpusTools/main/README.md) | [![Download](https://img.shields.io/github/release/Domivat24/OpusTools.svg?maxAge=3600&label=download&include_prereleases)](https://github.com/Domivat24/OpusTools/releases)
+|[![es](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Domivat24/OpusTools/blob/main/README.md) | [![Download](https://img.shields.io/github/release/Domivat24/OpusTools.svg?maxAge=3600&label=download&include_prereleases)](https://github.com/Domivat24/OpusTools/releases)
 
 This is an incomplete translation tool and patcher for the videogame Opus: Rocket of Whispers made in C# and working on Windows.
 
