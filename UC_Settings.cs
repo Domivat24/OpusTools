@@ -262,5 +262,11 @@ namespace OpusTool
 
             }
         }
+
+        private void textBoxDirectory_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            textBoxDirectory.Text = files[0];
+        }
     }
 }

@@ -97,6 +97,7 @@ namespace OpusTool
             textBoxDirectory.ReadOnly = true;
             textBoxDirectory.MouseClick += textBoxDirectory_MouseClick;
             textBoxDirectory.TextChanged += textBoxDirectory_TextChanged;
+            textBoxDirectory.DragDrop += textBoxDirectory_DragDrop;
             textBoxDirectory.DragEnter += textBoxDirectory_DragEnter;
             textBoxDirectory.DragLeave += textBoxDirectory_DragLeave;
             textBoxDirectory.MouseEnter += textBoxDirectory_MouseEnter;

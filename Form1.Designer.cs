@@ -161,6 +161,7 @@ namespace OpusTool
             Name = "Form1";
             FormClosing += Form1_FormClosing_1;
             Load += Form1_Load;
+            Shown += Form1_Shown;
             panelHeader.ResumeLayout(false);
             panelHeader.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
