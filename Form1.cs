@@ -5,6 +5,7 @@ using System.Resources;
 using OpusTool.Properties;
 using Microsoft.Win32;
 using Gameloop.Vdf;
+using System.Diagnostics;
 
 namespace OpusTool
 {
@@ -142,6 +143,27 @@ namespace OpusTool
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             backgroundMusic.Dispose();
+            var Browser = UC_About.webView;
+            if (Browser.Created)
+            {
+                try
+                {
+                    // Delete WebView2 user data before application exits
+                    string? webViewCacheDir = Browser.CoreWebView2.Environment.UserDataFolder;
+                    var webViewProcessId = Convert.ToInt32(Browser.CoreWebView2.BrowserProcessId);
+                    var webViewProcess = Process.GetProcessById(webViewProcessId);
+
+                    // Shutdown browser with Dispose, and wait for process to exit
+                    Browser.Dispose();
+                    webViewProcess.WaitForExit(3000);
+
+                    Directory.Delete(webViewCacheDir, true);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+            }
         }
     }
 }

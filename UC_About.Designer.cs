@@ -28,23 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            webView = new Microsoft.Web.WebView2.WinForms.WebView2();
             labelNoInternet = new Label();
-            ((System.ComponentModel.ISupportInitialize)webView).BeginInit();
             SuspendLayout();
-            // 
-            // webView
-            // 
-            webView.AllowExternalDrop = true;
-            webView.CreationProperties = null;
-            webView.DefaultBackgroundColor = Color.White;
-            webView.Dock = DockStyle.Fill;
-            webView.Location = new Point(0, 0);
-            webView.Name = "webView";
-            webView.Size = new Size(640, 444);
-            webView.TabIndex = 0;
-            webView.Visible = false;
-            webView.ZoomFactor = 1D;
             // 
             // labelNoInternet
             // 
@@ -55,7 +40,7 @@
             labelNoInternet.Location = new Point(0, 0);
             labelNoInternet.Name = "labelNoInternet";
             labelNoInternet.Size = new Size(640, 444);
-            labelNoInternet.TabIndex = 2;
+            labelNoInternet.TabIndex = 5;
             labelNoInternet.Text = "labelNoInternet";
             labelNoInternet.TextAlign = ContentAlignment.MiddleCenter;
             labelNoInternet.Visible = false;
@@ -66,16 +51,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.button;
             Controls.Add(labelNoInternet);
-            Controls.Add(webView);
             Name = "UC_About";
             Size = new Size(640, 444);
-            ((System.ComponentModel.ISupportInitialize)webView).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Microsoft.Web.WebView2.WinForms.WebView2 webView;
         private Label labelNoInternet;
     }
 }

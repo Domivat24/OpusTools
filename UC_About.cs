@@ -4,6 +4,7 @@ using System.Timers;
 using Timer = System.Timers.Timer;
 using System.Diagnostics;
 using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace OpusTool
 {
@@ -13,6 +14,8 @@ namespace OpusTool
         private ResourceManager rm;
         private static Timer timer;
         private Uri previousWebViewSource;
+        public static WebView2 webView = new WebView2();
+
 
         public UC_About()
         {
@@ -20,6 +23,11 @@ namespace OpusTool
             _cultureManager = new CultureManager<UC_About>(this);
             _cultureManager.updateCurrentControlCulture();
             rm = _cultureManager.rm;
+            webView.Dock = DockStyle.Fill;
+            webView.Visible = false;
+            this.Controls.Add(webView);
+            webView.ZoomFactor = 1D;
+
             webView.SourceChanged += WebViewSourceChanged;
 
             //First time checking before having to wait the timer
@@ -59,7 +67,7 @@ namespace OpusTool
 
                 webView.Visible = true;
                 labelNoInternet.Visible = false;
-               
+
             }));
         }
 
