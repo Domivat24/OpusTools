@@ -25,7 +25,7 @@ namespace OpusTool
     public partial class UC_Settings : UserControl
     {
         private string previousSelectedItem = null;
-        public Form1 ParentForm { get; set; }
+        private Form1 ParentForm { get; set; }
         private CultureManager<UC_Settings> _cultureManager;
         private ResourceManager rm;
         private ToolTip toolTipEnter = new ToolTip();
@@ -188,6 +188,10 @@ namespace OpusTool
                 ParentForm._cultureManager.setCultureInfo();
                 ParentForm._cultureManager.updateCurrentControlCulture();
                 previousSelectedItem = selectedValue;
+                languageBox.Items.Clear();
+                languageBox.Items.Add(rm.GetString("languageEn"));
+                languageBox.Items.Add(rm.GetString("languageEs"));
+                languageBox.SelectedIndex = Properties.Settings.Default.CultureInfo == "en" ? 0 : 1;
             }
 
         }

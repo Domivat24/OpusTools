@@ -7,23 +7,14 @@
     <UseWindowsForms>true</UseWindowsForms>
 	<EnableWindowsTargeting>true</EnableWindowsTargeting>
 	<ImplicitUsings>enable</ImplicitUsings>
-	<Version>0.5.2.0</Version>
-	<AssemblyVersion>0.5.2.0</AssemblyVersion>
+	<Version>0.5.5.0</Version>
+	<AssemblyVersion>0.5.5.0</AssemblyVersion>
 	<ApplicationIcon>Resources\logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\backgroundMusic.mp3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\backgroundMusic.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Gameloop.Vdf" Version="0.6.2" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1829-prerelease" />
     <PackageReference Include="Mono.Cecil" Version="0.11.5" />
     <PackageReference Include="NAudio" Version="2.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -54,6 +45,9 @@
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\backgroundMusic.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnaApplyPatch" xml:space="preserve">
+    <value>Aplicar parche de traducción</value>
+  </data>
   <data name="btnAbout" xml:space="preserve">
     <value>Acerca de </value>
   </data>
@@ -168,6 +171,9 @@
   <data name="captionNoVersion" xml:space="preserve">
     <value>¡Versión al día!</value>
   </data>
+  <data name="captionPatcherSuccess" xml:space="preserve">
+    <value>¡Parche aplicado con éxito!</value>
+  </data>
   <data name="gameNotFound" xml:space="preserve">
     <value>No se han encontrado los archivos del juego. Asegúrate de introducir la ruta correcta en los ajustes.</value>
   </data>
@@ -181,10 +187,10 @@
     <value>¡Algo ha salido mal!</value>
   </data>
   <data name="labelCodeLanguage" xml:space="preserve">
-    <value>Introduce el código ISO del idioma al que desea traducir:</value>
+    <value>Código ISO del idioma al que desea traducir:</value>
   </data>
   <data name="labelCommentLanguage" xml:space="preserve">
-    <value>Selecciona el idioma que quieras añadir como comentario de cada cadena:</value>
+    <value>Idioma como comentario de cada cadena:</value>
   </data>
   <data name="labelDirectory" xml:space="preserve">
     <value>Ruta del juego</value>
@@ -200,6 +206,9 @@
   </data>
   <data name="labelNoComment" xml:space="preserve">
     <value>No quiero ningún idioma como comentario</value>
+  </data>
+  <data name="labelNoInternet" xml:space="preserve">
+    <value>¡ATENCIÓN! Se ha perdido la conexión a Internet... Recuerda que la aplicación necesita tener conexión activa para poder utilizar todas sus funcionalidades.</value>
   </data>
   <data name="labelOriginalLanguage" xml:space="preserve">
     <value>Selecciona el idioma del que quieres traducir:</value>
@@ -258,6 +267,9 @@
   <data name="messageNoVersion" xml:space="preserve">
     <value>No hay una nueva versión disponible de la aplicación.</value>
   </data>
+  <data name="messagePatcherSuccess" xml:space="preserve">
+    <value>Al entrar al juego, verás la opción "Castellano" en el selector de idiomas. ¡Que lo disfrutes!</value>
+  </data>
   <data name="messageSelectJSON" xml:space="preserve">
     <value>Selecciona el archivo json exportado del juego</value>
   </data>
@@ -267,10 +279,16 @@
   <data name="savePoDialog" xml:space="preserve">
     <value>Seleccione dónde y con que nombre desea generar el archivo PO.</value>
   </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
   <data name="toolTipDragDrop" xml:space="preserve">
     <value>Debes seleccionar la carpeta madre del juego, donde se encuentra el ejecutable y el subdirectorio OPUS Rocket of Whispers_Data</value>
   </data>
   <data name="toolTipEnter" xml:space="preserve">
     <value>Arrastra y suelta el directorio del juego o clica en el recuadro para buscarlo en el sistema.</value>
+  </data>
+  <data name="webViewUrl" xml:space="preserve">
+    <value>https://github.com/Domivat24/OpusTools/blob/main/README.md#parcheador-opus-rocket-of-whispers</value>
   </data>
 </root>

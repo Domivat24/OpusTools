@@ -28,18 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            webView = new Microsoft.Web.WebView2.WinForms.WebView2();
+            labelNoInternet = new Label();
+            ((System.ComponentModel.ISupportInitialize)webView).BeginInit();
+            SuspendLayout();
+            // 
+            // webView
+            // 
+            webView.AllowExternalDrop = true;
+            webView.CreationProperties = null;
+            webView.DefaultBackgroundColor = Color.White;
+            webView.Dock = DockStyle.Fill;
+            webView.Location = new Point(0, 0);
+            webView.Name = "webView";
+            webView.Size = new Size(640, 444);
+            webView.TabIndex = 0;
+            webView.Visible = false;
+            webView.ZoomFactor = 1D;
+            // 
+            // labelNoInternet
+            // 
+            labelNoInternet.AutoEllipsis = true;
+            labelNoInternet.Dock = DockStyle.Fill;
+            labelNoInternet.Font = new Font("Noto Sans Cond", 21.7499962F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNoInternet.ForeColor = SystemColors.ButtonHighlight;
+            labelNoInternet.Location = new Point(0, 0);
+            labelNoInternet.Name = "labelNoInternet";
+            labelNoInternet.Size = new Size(640, 444);
+            labelNoInternet.TabIndex = 2;
+            labelNoInternet.Text = "labelNoInternet";
+            labelNoInternet.TextAlign = ContentAlignment.MiddleCenter;
+            labelNoInternet.Visible = false;
             // 
             // UC_About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UC_About";
-            this.Size = new System.Drawing.Size(640, 444);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.button;
+            Controls.Add(labelNoInternet);
+            Controls.Add(webView);
+            Name = "UC_About";
+            Size = new Size(640, 444);
+            ((System.ComponentModel.ISupportInitialize)webView).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView;
+        private Label labelNoInternet;
     }
 }

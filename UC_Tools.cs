@@ -1,24 +1,14 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Yarhl.FileSystem;
 using Yarhl.Media.Text;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-using System.Reflection.Metadata;
 using System.Reflection;
-using Mono.CompilerServices.SymbolWriter;
-using System.Collections;
 using System.Resources;
-using System.Web;
+using System.Diagnostics;
+using Mono.Cecil.Rocks;
 
 namespace OpusTool
 {
@@ -195,19 +185,12 @@ namespace OpusTool
         }
         private void modify_Dll_Export(string pathDll)
         {
-            //string pathDll = Directory.GetCurrentDirectory() + "/Assembly-CSharp.dll";
-            //string pathDll = @"E:\Program Files x86\steamapps\common\OPUS Rocket of Whispers\OPUS Rocket of Whispers_Data\Managed\Assembly-CSharp.dll";
             var resolver = new DefaultAssemblyResolver();
-            resolver.AddSearchDirectory(pathDll);
-            using (var assembly = Mono.Cecil.AssemblyDefinition.ReadAssembly(pathDll+"/Assembly-Csharp.dll", new ReaderParameters { ReadWrite = true, AssemblyResolver = resolver }))
+            resolver.AddSearchDirectory(Path.Combine(Properties.Settings.Default.GamePath,"OPUS Rocket of Whispers_Data","Managed"));
+            using (var assembly = Mono.Cecil.AssemblyDefinition.ReadAssembly(pathDll+"/Original/Assembly-Csharp.dll", new ReaderParameters { ReadWrite = true, AssemblyResolver = resolver }))
             {
                 Mono.Cecil.TypeDefinition manager_Class = assembly.MainModule.Types.FirstOrDefault(type => type.Name == "LocalizationManager");
                 Mono.Cecil.MethodDefinition cacheDatabase = manager_Class.Methods.FirstOrDefault(method => method.Name == "ResetCacheStringDataBase");
-
-                MethodInfo writeLineMethod = typeof(UC_Tools).GetMethod("testAssembly");
-                Console.WriteLine(writeLineMethod);
-
-                MethodReference methodReference = assembly.MainModule.ImportReference(writeLineMethod);
 
                 ILProcessor ilprocessor = cacheDatabase.Body.GetILProcessor();
 
@@ -215,12 +198,22 @@ namespace OpusTool
                 var listRef = assembly.MainModule.ImportReference(typeof(List<Dictionary<string, string>>));
                 var listCtor = assembly.MainModule.ImportReference(typeof(List<Dictionary<string, string>>).GetConstructor(BindingFlags.Instance | BindingFlags.Public, null, new Type[0], null));
                 var listAddMethod = assembly.MainModule.ImportReference(typeof(List<Dictionary<string, string>>).GetMethod("Add", new[] { typeof(Dictionary<string, string>) }));
+                var fileReadMethod = assembly.MainModule.ImportReference(typeof(File).GetMethod("ReadAllText", new[] { typeof(string) } ));
+                MethodReference jsonDeserializeMethod = assembly.MainModule.ImportReference(typeof(JsonConvert).GetMethods().Where(x => x.Name == "DeserializeObject").FirstOrDefault(x => x.IsGenericMethod));
+
+                var dictionaryType = assembly.MainModule.ImportReference(typeof(Dictionary<string, string>));
+
+                var fld_dictionary_1 = new FieldDefinition("dictionary", Mono.Cecil.FieldAttributes.Private, assembly.MainModule.ImportReference(typeof(Dictionary<,>)).MakeGenericInstanceType(assembly.MainModule.TypeSystem.String, assembly.MainModule.TypeSystem.String));
 
                 // variables
                 var varList = new VariableDefinition(listRef);
                 cacheDatabase.Body.Variables.Add(varList);
                 //need to initialize the variable, even though it will always find the variable
                 VariableDefinition varGoogleDataBaseDicString = default;
+                foreach(var instruction in cacheDatabase.Body.Instructions)
+                {
+                    Debug.WriteLine(instruction.ToString());
+                }
                 // Get the instance of the variable that stores the database data
                 foreach (VariableDefinition variable in cacheDatabase.Body.Variables)
                 {
@@ -240,6 +233,10 @@ namespace OpusTool
                 var newObjList = ilprocessor.Create(OpCodes.Newobj, listCtor);
                 var stLocList = ilprocessor.Create(OpCodes.Stloc, varList);
 
+                var ldStrTranslationFile = ilprocessor.Create(OpCodes.Ldstr, "translation.json");
+                var callFileRead = ilprocessor.Create(OpCodes.Call, fileReadMethod);
+                var callJsonDeserialize = ilprocessor.Create(OpCodes.Call, jsonDeserializeMethod);
+
                 var ldLocList = ilprocessor.Create(OpCodes.Ldloc, varList);
                 //var callAddList = ilprocessor.Create  (OpCodes.Call, listAddMethod);
                 var ldLocDatabase = ilprocessor.Create(OpCodes.Ldloc, varGoogleDataBaseDicString);
@@ -248,58 +245,69 @@ namespace OpusTool
                 var ldElemRefJ = ilprocessor.Create(OpCodes.Ldelem_Ref);
                 var CallVirtAddMethod = ilprocessor.Create(OpCodes.Callvirt, listAddMethod);
 
+                //Dictionary<string, string> dictionary = new<Dictionary<string, string>>(File.ReadAllText("translation.json"));
+
+                //ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], ilprocessor.Create(OpCodes.Ldarg_0));
+                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], ldStrTranslationFile);
+                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], callFileRead);
+                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], callJsonDeserialize);
+                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], ilprocessor.Create(OpCodes.Stloc_0));
+                //ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], ilprocessor.Create(OpCodes.Stfld, fld_dictionary_1));
+
 
                 //List<Dictionary<string, string>> list = new List<Dictionary<string, string>>();
 
-                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], newObjList);
-                ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], stLocList);
+                //ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], newObjList);
+                //ilprocessor.InsertBefore(cacheDatabase.Body.Instructions[0], stLocList);
 
 
                 // list.Add(googleDataBaseDicString.datas[j]);
 
+                /*
+                 
+                                InstructionPattern pattern = new InstructionPattern(
+                                    OpCodes.Ldloc_0,
+                                    OpCodes.Br_S,
+                                    OpCodes.Ldc_I4_S,
+                                    OpCodes.Blt_S,
+                                    OpCodes.Ldarg_0,
+                                    OpCodes.Ldloc_0,
+                                    OpCodes.Ldelem_Ref,
+                                    OpCodes.Callvirt,
+                                    OpCodes.Stloc_1,
+                                    OpCodes.Ldloc_0,
+                                    OpCodes.Ldc_I4_1,
+                                    OpCodes.Add,
+                                    OpCodes.Stloc_0,
+                                    OpCodes.Br_S
+                    );
+                                MethodBodyScanner scanner = new MethodBodyScanner(cacheDatabase.Body);
 
-                InstructionPattern pattern = new InstructionPattern(
-                    OpCodes.Ldloc_0,
-                    OpCodes.Br_S,
-                    OpCodes.Ldc_I4_S,
-                    OpCodes.Blt_S,
-                    OpCodes.Ldarg_0,
-                    OpCodes.Ldloc_0,
-                    OpCodes.Ldelem_Ref,
-                    OpCodes.Callvirt,
-                    OpCodes.Stloc_1,
-                    OpCodes.Ldloc_0,
-                    OpCodes.Ldc_I4_1,
-                    OpCodes.Add,
-                    OpCodes.Stloc_0,
-                    OpCodes.Br_S
-    );
-                MethodBodyScanner scanner = new MethodBodyScanner(cacheDatabase.Body);
-
-                MethodBodyScannerResult scannerResult = scanner.Scan(pattern);
-
-
-
-                // Scan the method body for the pattern
-                MethodBodyScannerResult result = scanner.Scan(pattern);
-
-                // If a match was found, insert the new instruction after the loop
-                if (result.Success)
-                {
-                    Instruction newInstruction = Instruction.Create(OpCodes.Nop);
-                    ilprocessor.InsertAfter(result.Match, newInstruction);
-                }
+                                MethodBodyScannerResult scannerResult = scanner.Scan(pattern);
 
 
-                // list.Add(googleDataBaseDicString.datas[j]);
-                Instruction loopExitInstruction = cacheDatabase.Body.Instructions.Single(i =>
-                    i.OpCode == OpCodes.Brfalse && i.Operand is Instruction &&
-                    ((Instruction)i.Operand).Operand == cacheDatabase.Body.Variables[0]);
-                ilprocessor.InsertAfter(result.Match, ldLocList);
-                ilprocessor.InsertAfter(result.Match, ldLocDatabase);
-                ilprocessor.InsertAfter(result.Match, callgoogleDataBaseDatasRef);
-                ilprocessor.InsertAfter(result.Match, ldLocJValue);
-                ilprocessor.InsertAfter(result.Match, ldElemRefJ);
+
+                                // Scan the method body for the pattern
+                                MethodBodyScannerResult result = scanner.Scan(pattern);
+
+                                // If a match was found, insert the new instruction after the loop
+                                if (result.Success)
+                                {
+                                    Instruction newInstruction = Instruction.Create(OpCodes.Nop);
+                                    ilprocessor.InsertAfter(result.Match, newInstruction);
+                                }
+
+
+                                // list.Add(googleDataBaseDicString.datas[j]);
+                                Instruction loopExitInstruction = cacheDatabase.Body.Instructions.Single(i =>
+                                    i.OpCode == OpCodes.Brfalse && i.Operand is Instruction &&
+                                    ((Instruction)i.Operand).Operand == cacheDatabase.Body.Variables[0]);
+                                ilprocessor.InsertAfter(result.Match, ldLocList);
+                                ilprocessor.InsertAfter(result.Match, ldLocDatabase);
+                                ilprocessor.InsertAfter(result.Match, callgoogleDataBaseDatasRef);
+                                ilprocessor.InsertAfter(result.Match, ldLocJValue);
+                                ilprocessor.InsertAfter(result.Match, ldElemRefJ);
+                 * */
 
                 try
                 {
@@ -307,7 +315,7 @@ namespace OpusTool
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.ToString());
+                    MessageBox.Show(e.ToString());
                 }
             }
 

@@ -1,20 +1,9 @@
 using NAudio.Wave;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Globalization;
-using System.Runtime.InteropServices;
-using System.Reflection;
-using System.IO;
-using System.Text;
-using Yarhl.FileSystem;
-using Yarhl.Media.Text;
 using System.Resources;
-using System.Reflection;
-using System.Windows.Forms;
 using OpusTool.Properties;
-using System.Resources;
 using Microsoft.Win32;
-using System.Text.RegularExpressions;
 using Gameloop.Vdf;
 
 namespace OpusTool
@@ -38,7 +27,6 @@ namespace OpusTool
         {
             var ms = new MemoryStream(Resources.backgroundMusic);
             WaveStream waveStream = new Mp3FileReader(ms);
-
             backgroundMusic = new WaveOutEvent();
 
             backgroundMusic.Init(new LoopStream(waveStream));
@@ -73,7 +61,6 @@ namespace OpusTool
 
             // Get the installation directory of Steam
             string steamPath = steamKey.GetValue("SteamPath") as string;
-            Console.WriteLine(steamPath);
 
             if (steamPath == null)
             {
@@ -83,16 +70,12 @@ namespace OpusTool
             dynamic libraries = VdfConvert.Deserialize(File.ReadAllText(steamPath + @"\steamapps\libraryfolders.vdf"));
             foreach (var kvp in libraries.Value)
             {
-                string libraryIndex = kvp.Key;
                 dynamic library = kvp.Value;
 
                 if (library != null)
                 {
                     string folderPath = library["path"].ToString();
                     dynamic apps = library["apps"];
-
-                    Console.WriteLine("Library Index: " + libraryIndex);
-                    Console.WriteLine("Folder Path: " + folderPath);
                     if (apps != null)
                     {
                         foreach (var appKvp in apps)
@@ -102,10 +85,7 @@ namespace OpusTool
                             if (appId == "742250")
                             {
                                 dynamic app = appKvp.Value;
-                                string appName = library["path"].ToString();
-                                Console.WriteLine("App ID: " + appId);
-                                Console.WriteLine("App Name: " + appName);
-                                return Path.Combine(library["path"].ToString(), "steamapps", "common", "Opus Rocket Of Whispers");
+                                return Path.Combine(folderPath.ToString(), "steamapps", "common", "OPUS Rocket Of Whispers");
                             }
                         }
                     }

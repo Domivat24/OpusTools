@@ -111,6 +111,7 @@ namespace OpusTool
             // languageBox
             // 
             resources.ApplyResources(languageBox, "languageBox");
+            languageBox.DropDownStyle = ComboBoxStyle.DropDownList;
             languageBox.FormattingEnabled = true;
             languageBox.Name = "languageBox";
             languageBox.SelectedIndexChanged += languageBox_SelectedIndexChanged;

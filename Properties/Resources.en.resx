@@ -117,11 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnaApplyPatch" xml:space="preserve">
+    <value>Apply translation patch</value>
+  </data>
   <data name="btnAbout" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCheckUpdates" xml:space="preserve">
+    <value>Check Updates</value>
+  </data>
+  <data name="btnExportPo" xml:space="preserve">
+    <value>Export to PO file</value>
+  </data>
+  <data name="btnImportPo" xml:space="preserve">
+    <value>Convert PO to json</value>
+  </data>
+  <data name="btnModifyDll" xml:space="preserve">
+    <value>Modify dll files</value>
+  </data>
   <data name="btnPatcher" xml:space="preserve">
-    <value>Parcheador</value>
+    <value>Patcher</value>
   </data>
   <data name="btnSettings" xml:space="preserve">
     <value>Settings</value>
@@ -129,13 +150,142 @@
   <data name="btnTools" xml:space="preserve">
     <value>Tools</value>
   </data>
+  <data name="captionFileError" xml:space="preserve">
+    <value>Problema al seleccionar archivo</value>
+  </data>
+  <data name="captionFillError" xml:space="preserve">
+    <value>¡Problema de validación!</value>
+  </data>
+  <data name="captionGameNotFound" xml:space="preserve">
+    <value>Juego no encontrado</value>
+  </data>
+  <data name="captionGamePathMissing" xml:space="preserve">
+    <value>Directorio de instalación no encontrado</value>
+  </data>
+  <data name="captionNewVersion" xml:space="preserve">
+    <value>Actualización disponible</value>
+  </data>
+  <data name="captionNoInternet" xml:space="preserve">
+    <value>Sin Internet</value>
+  </data>
+  <data name="captionNoVersion" xml:space="preserve">
+    <value>¡Versión al día!</value>
+  </data>
+  <data name="captionPatcherSuccess" xml:space="preserve">
+    <value>¡Parche aplicado con éxito!</value>
+  </data>
+  <data name="gameNotFound" xml:space="preserve">
+    <value>No se han encontrado los archivos del juego. Asegúrate de introducir la ruta correcta en los ajustes.</value>
+  </data>
+  <data name="gamePathMissing" xml:space="preserve">
+    <value>No se ha encontrado el directorio del juego en su equipo. Vaya a la pestaña de ajustes para proporcionar su ruta.</value>
+  </data>
+  <data name="generalError" xml:space="preserve">
+    <value>Se ha producido el siguiente error:</value>
+  </data>
+  <data name="generalErrorCaption" xml:space="preserve">
+    <value>¡Algo ha salido mal!</value>
+  </data>
+  <data name="labelCodeLanguage" xml:space="preserve">
+    <value>Código ISO del idioma al que desea traducir:</value>
+  </data>
+  <data name="labelCommentLanguage" xml:space="preserve">
+    <value>Idioma como comentario de cada cadena:</value>
+  </data>
+  <data name="labelDirectory" xml:space="preserve">
+    <value>Game's path</value>
+  </data>
+  <data name="labelEmail" xml:space="preserve">
+    <value>Email del proyecto (si requiriese)</value>
+  </data>
   <data name="labelHeader" xml:space="preserve">
-    <value>Parcheador Opus: Rocket of Whispers</value>
+    <value>Opus: Rocket of Whispers patcher</value>
+  </data>
+  <data name="labelLanguage" xml:space="preserve">
+    <value>UI language</value>
+  </data>
+  <data name="labelNoComment" xml:space="preserve">
+    <value>No quiero ningún idioma como comentario</value>
+  </data>
+  <data name="labelNoInternet" xml:space="preserve">
+    <value>Internet connection lost! To fully experience the application it is required to have Internet connection</value>
+  </data>
+  <data name="labelOriginalLanguage" xml:space="preserve">
+    <value>Selecciona el idioma del que quieres traducir:</value>
+  </data>
+  <data name="labelPoLanguage" xml:space="preserve">
+    <value>Proporcione el idioma de traducción en código de lenguaje ISO</value>
+  </data>
+  <data name="labelProjectID" xml:space="preserve">
+    <value>Identificador del proyecto de traducción</value>
+  </data>
+  <data name="labelVolume" xml:space="preserve">
+    <value>Background music volume</value>
+  </data>
+  <data name="languageCHS" xml:space="preserve">
+    <value>Chino simplificado</value>
+  </data>
+  <data name="languageCHT" xml:space="preserve">
+    <value>Chino (Taiwanés)</value>
   </data>
   <data name="languageEn" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="languageEs" xml:space="preserve">
     <value>Spanish</value>
+  </data>
+  <data name="languageJP" xml:space="preserve">
+    <value>Japonés</value>
+  </data>
+  <data name="languageJPSWITCH" xml:space="preserve">
+    <value>Japonés (Switch)</value>
+  </data>
+  <data name="languageKR" xml:space="preserve">
+    <value>Coreano</value>
+  </data>
+  <data name="messageAborted" xml:space="preserve">
+    <value>Proceso abortado.</value>
+  </data>
+  <data name="messageErrorSelect" xml:space="preserve">
+    <value>No ha seleccionado el archivo con el foramto correcto o hay un problema con el archivo</value>
+  </data>
+  <data name="messageFileError" xml:space="preserve">
+    <value>El archivo seleccionado no tiene un formato válido</value>
+  </data>
+  <data name="messageFillError" xml:space="preserve">
+    <value>Rellena/selecciona todos los campos imprescindibles</value>
+  </data>
+  <data name="messageLanguageError" xml:space="preserve">
+    <value>El código de lenguaje no es válido. En la página que se abrirá a continuación se proporcionan ejemplos.</value>
+  </data>
+  <data name="messageNewVersion" xml:space="preserve">
+    <value>Hay una nueva versión disponible del programa. ¿Desea descargarla de internet y actualizar el programa?</value>
+  </data>
+  <data name="messageNoInternet" xml:space="preserve">
+    <value>No hay acceso a Internet. Para experimentar la applicación al completo es necesario disponer de conexión activa.</value>
+  </data>
+  <data name="messageNoVersion" xml:space="preserve">
+    <value>No hay una nueva versión disponible de la aplicación.</value>
+  </data>
+  <data name="messagePatcherSuccess" xml:space="preserve">
+    <value>Al entrar al juego, verás la opción "Castellano" en el selector de idiomas. ¡Que lo disfrutes!</value>
+  </data>
+  <data name="messageSelectJSON" xml:space="preserve">
+    <value>Selecciona el archivo json exportado del juego</value>
+  </data>
+  <data name="messageSelectPO" xml:space="preserve">
+    <value>Selecciona el archivo po con el texto traducido del juego</value>
+  </data>
+  <data name="savePoDialog" xml:space="preserve">
+    <value>Seleccione dónde y con que nombre desea generar el archivo PO.</value>
+  </data>
+  <data name="toolTipDragDrop" xml:space="preserve">
+    <value>Debes seleccionar la carpeta madre del juego, donde se encuentra el ejecutable y el subdirectorio OPUS Rocket of Whispers_Data</value>
+  </data>
+  <data name="toolTipEnter" xml:space="preserve">
+    <value>Arrastra y suelta el directorio del juego o clica en el recuadro para buscarlo en el sistema.</value>
+  </data>
+  <data name="webViewUrl" xml:space="preserve">
+    <value>https://github.com/Domivat24/OpusTools/blob/main/README.en.md#opus-translation-tool-and-patcher</value>
   </data>
 </root>
