@@ -2,7 +2,7 @@
 
 | More detailed and english README | Última versión |
 |-------|----------
-|[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Domivat24/OpusTools/main/README.en.md) | [![Download](https://img.shields.io/github/release/Domivat24/OpusTools.svg?maxAge=3600&label=descarga&include_prereleases)](https://github.com/Domivat24/OpusTools/releases)
+|[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Domivat24/OpusTools/blob/main/README.en.md) | [![Download](https://img.shields.io/github/release/Domivat24/OpusTools.svg?maxAge=3600&label=descarga&include_prereleases)](https://github.com/Domivat24/OpusTools/releases)
 
 Esta es una herramienta incompleta con el objetivo de traducir al español el videojuego Opus: Rocket of Whispers (de momento y sin promesas de nada, únicamente la versión de PC).
 
