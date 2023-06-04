@@ -37,7 +37,8 @@ namespace OpusTool
             if (!Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_data")))
             {
                 string gamePath = GetSteamGamePath();
-                if (gamePath != null)
+                //check if game is found and is not the remains of a previous installation
+                if (gamePath != null && Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_data")))
                 {
                     Console.WriteLine("Opus Rocket of Whispers installed at {0}", gamePath);
                     Properties.Settings.Default.GamePath = gamePath;
