@@ -63,20 +63,33 @@ namespace OpusTool
                 {
                     string folderPath = library["path"].ToString();
                     dynamic apps = library["apps"];
-                    if (apps != null)
+                    var possiblePath = Path.Combine(folderPath.ToString(), "steamapps", "common", "OPUS Rocket Of Whispers");
+                    if (Directory.Exists(Path.Combine(possiblePath, "OPUS Rocket Of Whispers_data")) && File.Exists(Path.Combine(folderPath.ToString(),"steamapps", "appmanifest_742250.acf")))
                     {
-                        foreach (var appKvp in apps)
-                        {
-                            string appId = appKvp.Key;
-                            //ID of Opus Rocket of Whispers
-                            if (appId == "742250")
-                            {
-                                dynamic app = appKvp.Value;
-                                return Path.Combine(folderPath.ToString(), "steamapps", "common", "OPUS Rocket Of Whispers");
-                            }
-                        }
-                    }
+                        return possiblePath;
                 }
+
+                /*
+                 * ITERATE on apps library only gets updated after steam is restarted and is not strictly needed
+                 * if (apps != null)
+            {   foreach (var appKvp in apps)
+                 {
+                     string appId = appKvp.Key;
+                     //ID of Opus Rocket of Whispers
+                     if (appId == "742250")
+                     {
+                         dynamic app = appKvp.Value;
+                         var possiblePath = Path.Combine(folderPath.ToString(), "steamapps", "common", "OPUS Rocket Of Whispers");
+                         if (Directory.Exists(Path.Combine(possiblePath, "OPUS Rocket Of Whispers_data")))
+                         {
+                             return Path.Combine(folderPath.ToString(), "steamapps", "common", "OPUS Rocket Of Whispers");
+                         }
+                     }
+                 }
+             }
+
+                */
+            }
             }
             return null;
         }
@@ -156,11 +169,13 @@ namespace OpusTool
         {
             await Task.Delay(100);
             //If the actual user path is not setted or incorrect, tries to find it in Steam folders and tells the user in case it cannot find it
-            if (!Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_data")))
+            if (!Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_Data")))
             {
                 string gamePath = GetSteamGamePath();
+                Debug.WriteLine(gamePath);
+                Debug.WriteLine(Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_Data")));
                 //check if game is found and is not the remains of a previous installation
-                if (gamePath != null && Directory.Exists(Path.Combine(Settings.Default.GamePath, "OPUS Rocket of Whispers_data")))
+                if (gamePath != null && Directory.Exists(Path.Combine(gamePath, "OPUS Rocket of Whispers_Data")))
                 {
                     Console.WriteLine("Opus Rocket of Whispers installed at {0}", gamePath);
                     Properties.Settings.Default.GamePath = gamePath;
@@ -168,6 +183,8 @@ namespace OpusTool
                 }
                 else
                 {
+                    Properties.Settings.Default.GamePath = gamePath;
+                    Properties.Settings.Default.Save();
                     MessageBox.Show(rm.GetString("gamePathMissing"), rm.GetString("captionGamePathMissing"), MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
             }

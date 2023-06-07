@@ -101,7 +101,8 @@ namespace OpusTool
                                             {
                                                 FileName = extractedPath,
                                                 UseShellExecute = true,
-                                                WorkingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)
+                                                WorkingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location),
+                                                Arguments = $"--deletePrevious \"{Assembly.GetEntryAssembly().Location}\""
                                             };
                                             Process.Start(startInfo);
 
@@ -109,8 +110,8 @@ namespace OpusTool
                                             currentProcess.CloseMainWindow();
                                             currentProcess.Close();
                                             File.Delete(filePath);
-                                            File.Delete(Assembly.GetEntryAssembly().Location);
                                             Environment.Exit(0);
+
                                         }
                                     }
                                 }
