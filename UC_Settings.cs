@@ -100,7 +100,7 @@ namespace OpusTool
                                             var startInfo = new ProcessStartInfo
                                             {
                                                 FileName = extractedPath,
-                                                UseShellExecute = true,
+                                                UseShellExecute = false,
                                                 WorkingDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location),
                                                 Arguments = $"--deletePrevious \"{Assembly.GetEntryAssembly().Location}\""
                                             };
